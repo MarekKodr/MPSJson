@@ -1,20 +1,9 @@
 [
-{
-"val1":false,
-"number":2.23,
-"number2":245,
-"number3":13243,
-"val2":"dsadsa",
-"fooo3":[
-false,
-true],
-"val5":false,
-"struct":{
-"var7":null,
-"var2":false,
-"dsa":null,
-"skhljlf":"trytj"
-}
-}
-
+  {
+    "str1":"aa",
+    "obj1":{
+      "str2":"bb"
+    },
+    "str3":"cc"
+  }
 ]
