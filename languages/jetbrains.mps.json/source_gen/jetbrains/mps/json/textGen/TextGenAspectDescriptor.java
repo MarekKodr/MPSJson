@@ -22,8 +22,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public TextGenDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     switch (myIndex.index(concept)) {
-      case LanguageConceptSwitch.JsonDocument:
-        return new JsonDocument_TextGen();
+      case LanguageConceptSwitch.JsonBaseObject:
+        return new JsonBaseObject_TextGen();
       case LanguageConceptSwitch.JsonFile:
         return new JsonFile_TextGen();
     }

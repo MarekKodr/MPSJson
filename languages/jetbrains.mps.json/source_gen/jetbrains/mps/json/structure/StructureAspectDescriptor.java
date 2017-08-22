@@ -13,8 +13,8 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptJsonArray = createDescriptorForJsonArray();
+  /*package*/ final ConceptDescriptor myConceptJsonBaseObject = createDescriptorForJsonBaseObject();
   /*package*/ final ConceptDescriptor myConceptJsonBool = createDescriptorForJsonBool();
-  /*package*/ final ConceptDescriptor myConceptJsonDocument = createDescriptorForJsonDocument();
   /*package*/ final ConceptDescriptor myConceptJsonElement = createDescriptorForJsonElement();
   /*package*/ final ConceptDescriptor myConceptJsonFile = createDescriptorForJsonFile();
   /*package*/ final ConceptDescriptor myConceptJsonNull = createDescriptorForJsonNull();
@@ -30,7 +30,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptJsonArray, myConceptJsonBool, myConceptJsonDocument, myConceptJsonElement, myConceptJsonFile, myConceptJsonNull, myConceptJsonNumber, myConceptJsonObject, myConceptJsonString, myConceptJsonValue);
+    return Arrays.asList(myConceptJsonArray, myConceptJsonBaseObject, myConceptJsonBool, myConceptJsonElement, myConceptJsonFile, myConceptJsonNull, myConceptJsonNumber, myConceptJsonObject, myConceptJsonString, myConceptJsonValue);
   }
 
   @Override
@@ -39,10 +39,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myConceptIndex.index(id)) {
       case LanguageConceptSwitch.JsonArray:
         return myConceptJsonArray;
+      case LanguageConceptSwitch.JsonBaseObject:
+        return myConceptJsonBaseObject;
       case LanguageConceptSwitch.JsonBool:
         return myConceptJsonBool;
-      case LanguageConceptSwitch.JsonDocument:
-        return myConceptJsonDocument;
       case LanguageConceptSwitch.JsonElement:
         return myConceptJsonElement;
       case LanguageConceptSwitch.JsonFile:
@@ -75,6 +75,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("array");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForJsonBaseObject() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonBaseObject", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d777L);
+    b.class_(false, false, false);
+    b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/8824564086558218103");
+    b.aggregate("elements", 0x7a7726483cf8d779L).target(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee34c54L).optional(true).ordered(true).multiple(true).origin("8824564086558218105").done();
+    b.alias("base object");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForJsonBool() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonBool", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dedf892bL);
     b.class_(false, false, false);
@@ -82,14 +90,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/5071148717115935019");
     b.prop("value", 0x466056e3dedf892cL, "5071148717115935020");
     b.alias("bool");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForJsonDocument() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonDocument", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d777L);
-    b.class_(false, false, false);
-    b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/8824564086558218103");
-    b.aggregate("elements", 0x7a7726483cf8d779L).target(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee34c54L).optional(true).ordered(true).multiple(true).origin("8824564086558218105").done();
-    b.alias("json document");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForJsonElement() {
@@ -105,7 +105,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonFile", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d776L);
     b.class_(false, false, true);
     b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/8824564086558218102");
-    b.aggregate("document", 0x7a7726483cf8d77cL).target(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d777L).optional(false).ordered(true).multiple(true).origin("8824564086558218108").done();
+    b.aggregate("objects", 0x7a7726483cf8d77cL).target(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d777L).optional(false).ordered(true).multiple(true).origin("8824564086558218108").done();
     b.alias("json file");
     return b.create();
   }

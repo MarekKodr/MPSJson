@@ -15,11 +15,13 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
+      <concept id="1233148810477" name="jetbrains.mps.lang.editor.structure.InlineStyleDeclaration" flags="ng" index="tppnM" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -60,7 +62,7 @@
       </node>
       <node concept="3F2HdR" id="4pwlIfuSVIW" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="igrf:7DR9$wWYdtW" resolve="document" />
+        <ref role="1NtTu8" to="igrf:7DR9$wWYdtW" resolve="objects" />
         <node concept="l2Vlx" id="4pwlIfuSVIY" role="2czzBx" />
         <node concept="pVoyu" id="4pwlIfuSVJ6" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -82,7 +84,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7DR9$wWYsMy">
-    <ref role="1XX52x" to="igrf:7DR9$wWYdtR" resolve="JsonDocument" />
+    <ref role="1XX52x" to="igrf:7DR9$wWYdtR" resolve="JsonBaseObject" />
     <node concept="3EZMnI" id="7DR9$wWYsM$" role="2wV5jI">
       <node concept="3F0ifn" id="7DR9$wWYsMI" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -110,8 +112,33 @@
   <node concept="24kQdi" id="4pwlIfuRyEa">
     <property role="3GE5qa" value="JsonValues" />
     <ref role="1XX52x" to="igrf:7DR9$wWYduh" resolve="JsonArray" />
-    <node concept="3F2HdR" id="4pwlIfuSOLr" role="2wV5jI">
-      <ref role="1NtTu8" to="igrf:7DR9$wWYdui" resolve="values" />
+    <node concept="3EZMnI" id="4pwlIfuSWKt" role="2wV5jI">
+      <node concept="3F0ifn" id="4pwlIfuSWK$" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+        <node concept="ljvvj" id="4pwlIfuT92_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="4pwlIfuSWKE" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="igrf:7DR9$wWYdui" resolve="values" />
+        <node concept="l2Vlx" id="4pwlIfuSZ4G" role="2czzBx" />
+        <node concept="lj46D" id="4pwlIfuT3wg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="tppnM" id="4pwlIfuTe$u" role="sWeuL">
+          <node concept="ljvvj" id="4pwlIfuTe$w" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4pwlIfuSWKP" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <node concept="pVoyu" id="4pwlIfuT1HU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4pwlIfuSWKw" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="4pwlIfuRS_g">
@@ -124,8 +151,12 @@
   <node concept="24kQdi" id="4pwlIfuS1sP">
     <property role="3GE5qa" value="JsonValues" />
     <ref role="1XX52x" to="igrf:4pwlIfuRS$$" resolve="JsonNumber" />
-    <node concept="3F0A7n" id="4pwlIfuSPmY" role="2wV5jI">
-      <ref role="1NtTu8" to="igrf:4pwlIfuRS$B" resolve="value" />
+    <node concept="3EZMnI" id="4pwlIfuT4pG" role="2wV5jI">
+      <node concept="3F0A7n" id="4pwlIfuT4pQ" role="3EZMnx">
+        <ref role="1NtTu8" to="igrf:4pwlIfuRS$B" resolve="value" />
+        <node concept="pVoyu" id="4pwlIfuT4pT" role="3F10Kt" />
+      </node>
+      <node concept="l2Vlx" id="4pwlIfuT4pJ" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="4pwlIfuSiFs">
@@ -157,15 +188,27 @@
   <node concept="24kQdi" id="4pwlIfuSk8p">
     <property role="3GE5qa" value="JsonValues" />
     <ref role="1XX52x" to="igrf:4pwlIfuRS$E" resolve="JsonNull" />
-    <node concept="3F0ifn" id="4pwlIfuSPas" role="2wV5jI">
-      <property role="3F0ifm" value="null" />
+    <node concept="3EZMnI" id="4pwlIfuT4pq" role="2wV5jI">
+      <node concept="3F0ifn" id="4pwlIfuT4px" role="3EZMnx">
+        <property role="3F0ifm" value="null" />
+        <node concept="pVoyu" id="4pwlIfuT4pC" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4pwlIfuT4pt" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="4pwlIfuSmDI">
     <property role="3GE5qa" value="JsonValues" />
     <ref role="1XX52x" to="igrf:4pwlIfuRS$F" resolve="JsonBool" />
-    <node concept="3F0A7n" id="4pwlIfuSOXX" role="2wV5jI">
-      <ref role="1NtTu8" to="igrf:4pwlIfuRS$G" resolve="value" />
+    <node concept="3EZMnI" id="4pwlIfuT0OP" role="2wV5jI">
+      <node concept="3F0A7n" id="4pwlIfuT0OW" role="3EZMnx">
+        <ref role="1NtTu8" to="igrf:4pwlIfuRS$G" resolve="value" />
+        <node concept="pVoyu" id="4pwlIfuT0OZ" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4pwlIfuT0OS" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="4pwlIfuSPIq">

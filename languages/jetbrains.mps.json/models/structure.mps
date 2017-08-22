@@ -59,15 +59,15 @@
     <node concept="1TJgyj" id="7DR9$wWYdtW" role="1TKVEi">
       <property role="IQ2ns" value="8824564086558218108" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="document" />
+      <property role="20kJfa" value="objects" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="7DR9$wWYdtR" resolve="JsonDocument" />
+      <ref role="20lvS9" node="7DR9$wWYdtR" resolve="JsonBaseObject" />
     </node>
   </node>
   <node concept="1TIwiD" id="7DR9$wWYdtR">
     <property role="EcuMT" value="8824564086558218103" />
-    <property role="TrG5h" value="JsonDocument" />
-    <property role="34LRSv" value="json document" />
+    <property role="TrG5h" value="JsonBaseObject" />
+    <property role="34LRSv" value="base object" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7DR9$wWYdtT" role="1TKVEi">
       <property role="IQ2ns" value="8824564086558218105" />
