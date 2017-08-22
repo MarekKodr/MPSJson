@@ -6,7 +6,7 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54476a9f-6095-4e98-80de-86607286b7e2" name="Default" comment="Editor + Structures update v.5">
+    <list default="true" id="54476a9f-6095-4e98-80de-86607286b7e2" name="Default" comment="Editor + Structures update v.6">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/classes_gen/jetbrains/mps/json/textGen/trace.info" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/classes_gen/jetbrains/mps/json/textGen/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/models/textGen.mps" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/models/textGen.mps" />
@@ -14,11 +14,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/sandbox/source_gen.caches/jetbrains/mps/json/sandbox/generated" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/sandbox/source_gen.caches/jetbrains/mps/json/sandbox/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/sandbox/source_gen/jetbrains/mps/json/sandbox/null.json" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/sandbox/source_gen/jetbrains/mps/json/sandbox/null.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen.caches/jetbrains/mps/json/generated" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen.caches/jetbrains/mps/json/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen.caches/jetbrains/mps/json/textGen/dependencies" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen.caches/jetbrains/mps/json/textGen/dependencies" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen.caches/jetbrains/mps/json/textGen/generated" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen.caches/jetbrains/mps/json/textGen/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonArray_TextGen.java" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonArray_TextGen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonBaseObject_TextGen.java" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonBaseObject_TextGen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonBool_TextGen.java" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonBool_TextGen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonElement_TextGen.java" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonElement_TextGen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonNull_TextGen.java" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonNull_TextGen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonNumber_TextGen.java" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonNumber_TextGen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonObject_TextGen.java" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonObject_TextGen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonString_TextGen.java" afterPath="$PROJECT_DIR$/languages/jetbrains.mps.json/source_gen/jetbrains/mps/json/textGen/JsonString_TextGen.java" />
@@ -102,6 +104,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="JsonBool" pinned="false" current-in-tab="false">
+        <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonBool">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="159" />
+                    <property name="caretXRelative" value="16" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558711238" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558635926" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558635926" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </restoreAlways>
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558635925" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="JsonString" pinned="false" current-in-tab="false">
         <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonString">
           <provider selected="true" editor-type-id="MPSFileEditor">
@@ -110,11 +158,11 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="273" />
-                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="135" />
+                    <property name="caretXRelative" value="8" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558745379" />
+                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8529367682052701924" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -135,7 +183,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -148,19 +196,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonFile" pinned="false" current-in-tab="false">
-        <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonFile">
+      <file leaf-file-name="JsonNumber" pinned="false" current-in-tab="false">
+        <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonNumber">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
               <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="265" />
-                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="127" />
+                    <property name="caretXRelative" value="8" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_yuehr3_c0" cellNumber="0" isInList="false">
-                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558298627" />
+                    <cellInfo cellId="Constant_jdqktq_a0" cellNumber="0" isInList="false">
+                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558688042" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -169,24 +217,19 @@
                 <foldable>
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558288808" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558297235" />
+                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558687496" />
                     </cellIdElement>
                   </collapsedElement>
                 </foldable>
                 <restoreAlways>
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558297235" />
+                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558687496" />
                     </cellIdElement>
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -194,7 +237,7 @@
                 <restoreAlways />
                 <enabledHints />
               </inspectorMemento>
-              <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558288806" />
+              <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558687495" />
             </state>
           </provider>
         </entry>
@@ -232,7 +275,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -257,7 +300,7 @@
                     <property name="caretXRelative" value="8" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558730664" />
+                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558725913" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -278,7 +321,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -324,7 +367,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -345,11 +388,11 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="151" />
+                    <property name="caretX" value="143" />
                     <property name="caretXRelative" value="16" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                      <node node_reference="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" />
+                      <node node_reference="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -358,7 +401,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -387,11 +430,11 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="135" />
-                    <property name="caretXRelative" value="8" />
+                    <property name="caretX" value="199" />
+                    <property name="caretXRelative" value="16" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558740519" />
+                    <cellInfo cellId="Constant_moyyqd_a0" cellNumber="0" isInList="false">
+                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8529367682052724544" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -412,7 +455,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -433,11 +476,11 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="183" />
-                    <property name="caretXRelative" value="32" />
+                    <property name="caretX" value="119" />
+                    <property name="caretXRelative" value="8" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
-                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558702701" />
+                    <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                      <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558702438" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -458,7 +501,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -467,15 +510,6 @@
                 <enabledHints />
               </inspectorMemento>
               <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558702394" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="null.json" pinned="false" current-in-tab="false">
-        <entry file="previewj.m.json.sandbox@0/null.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             </state>
           </provider>
         </entry>
@@ -604,12 +638,10 @@
               <option name="myItemId" value="ec603e73-55e8-4c6b-ac1f-f7a01e487844(jetbrains.mps.json)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen) in IdeaFile{file:///Users/jetbrains/MPSProjects/mpsjson/languages/jetbrains.mps.json/models/textGen.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JsonValues" />
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -622,34 +654,8 @@
               <option name="myItemId" value="407dffd6-6920-47da-a165-4146866baff7" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ec603e73-55e8-4c6b-ac1f-f7a01e487844(jetbrains.mps.json)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen) in IdeaFile{file:///Users/jetbrains/MPSProjects/mpsjson/languages/jetbrains.mps.json/models/textGen.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ec603e73-55e8-4c6b-ac1f-f7a01e487844(jetbrains.mps.json)" />
+              <option name="myItemId" value="jetbrains" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -677,11 +683,39 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="407dffd6-6920-47da-a165-4146866baff7" />
+              <option name="myItemId" value="ec603e73-55e8-4c6b-ac1f-f7a01e487844(jetbrains.mps.json)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jetbrains" />
+              <option name="myItemId" value="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen) in IdeaFile{file:///Users/jetbrains/MPSProjects/mpsjson/languages/jetbrains.mps.json/models/textGen.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="407dffd6-6920-47da-a165-4146866baff7" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ec603e73-55e8-4c6b-ac1f-f7a01e487844(jetbrains.mps.json)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen) in IdeaFile{file:///Users/jetbrains/MPSProjects/mpsjson/languages/jetbrains.mps.json/models/textGen.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JsonValues" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -700,6 +734,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox) in IdeaFile{file:///Users/jetbrains/MPSProjects/mpsjson/languages/jetbrains.mps.json/sandbox/models/jetbrains.mps.json.sandbox.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5071148717116098001" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -775,14 +813,14 @@
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28051645" sideWeight="0.5143061" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28051645" sideWeight="0.5171674" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.45851216" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.45565093" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28051645" sideWeight="0.48569384" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28051645" sideWeight="0.4828326" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.48569384" order="7" side_tool="false" content_ui="tabs" />
@@ -846,7 +884,8 @@
     <MESSAGE value="Editor + Structures update v.4" />
     <MESSAGE value="Editor + Structures update v.5" />
     <MESSAGE value="TextGen v.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="TextGen v.2" />
+    <MESSAGE value="TextGen v.3 Indentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="TextGen v.3 Indentation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonElement">
@@ -1707,94 +1746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonNumber">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="127" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_jdqktq_a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558688042" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558687496" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558687496" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558730664" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558687495" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonBool">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="159" />
-                <property name="caretXRelative" value="16" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558718661" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558635926" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558635926" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558702577" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558635925" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonFile">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -1832,7 +1783,7 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558745038" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1841,182 +1792,6 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558288806" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonString">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="273" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558745379" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558697148" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558697148" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558697147" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonNull">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="135" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558740519" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558734343" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558734343" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558734342" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonObject">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="119" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558730664" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558725870" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558725870" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558725869" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonElement">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="55" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_fwuxcr_e0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8529367682052630687" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558492857" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558492857" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558492856" />
         </state>
       </provider>
     </entry>
@@ -2052,7 +1827,7 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2064,6 +1839,138 @@
         </state>
       </provider>
     </entry>
+    <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonBool">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="159" />
+                <property name="caretXRelative" value="16" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558711238" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558635926" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558635926" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558635925" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonNumber">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="127" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_jdqktq_a0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558688042" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558687496" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558687496" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558687495" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonElement">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="55" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_fwuxcr_e0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8529367682052630687" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558492857" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558492857" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558492856" />
+        </state>
+      </provider>
+    </entry>
     <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonArray">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -2071,11 +1978,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="183" />
-                <property name="caretXRelative" value="32" />
+                <property name="caretX" value="119" />
+                <property name="caretXRelative" value="8" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
-                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558702701" />
+                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558702438" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2096,7 +2003,7 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -2108,6 +2015,138 @@
         </state>
       </provider>
     </entry>
+    <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonObject">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="119" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558725913" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558725870" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558725870" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558725869" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonString">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="135" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8529367682052701924" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558697148" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558697148" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558697147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://jetbrains.mps.json/jetbrains.mps.json.structure/JsonNull">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="199" />
+                <property name="caretXRelative" value="16" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_moyyqd_a0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8529367682052724544" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558734343" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0" cellNumber="0" isInList="false">
+                  <node node_reference="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558734343" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:a65339af-6b7e-43c9-b0bc-907c04231a74(jetbrains.mps.json.textGen)/8824564086558734342" />
+        </state>
+      </provider>
+    </entry>
     <entry file="mps://node://jetbrains.mps.json.sandbox/jetbrains.mps.json.sandbox/json file">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -2115,11 +2154,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="151" />
+                <property name="caretX" value="143" />
                 <property name="caretXRelative" value="16" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_value" cellNumber="0" isInList="false">
-                  <node node_reference="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" />
+                  <node node_reference="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2128,7 +2167,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052659944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:a5325b96-6b0b-451b-838d-ba4c9447c3ec(jetbrains.mps.json.sandbox)/8529367682052728447" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />

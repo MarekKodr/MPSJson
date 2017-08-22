@@ -1,9 +1,18 @@
 [
   {
-    "str1":"aa",
-    "obj1":{
-      "str2":"bb"
-    },
-    "str3":"cc"
+    "arr1":    [
+      {
+        "prvnipolozka":        "1",
+        "druhapolozka":        "2"
+      }      [
+        false,
+        false,
+        [
+1,
+2,
+3
+        ]
+      ]
+    ]
   }
 ]
