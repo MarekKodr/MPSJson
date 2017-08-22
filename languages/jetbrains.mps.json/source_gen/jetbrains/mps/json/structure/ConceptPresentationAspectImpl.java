@@ -12,6 +12,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_JsonArray;
   private ConceptPresentation props_JsonBool;
   private ConceptPresentation props_JsonDocument;
+  private ConceptPresentation props_JsonElement;
   private ConceptPresentation props_JsonFile;
   private ConceptPresentation props_JsonInteger;
   private ConceptPresentation props_JsonNull;
@@ -33,7 +34,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.JsonBool:
         if (props_JsonBool == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("JsonBool");
+          cpb.presentationByName();
           props_JsonBool = cpb.create();
         }
         return props_JsonBool;
@@ -44,6 +45,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_JsonDocument = cpb.create();
         }
         return props_JsonDocument;
+      case LanguageConceptSwitch.JsonElement:
+        if (props_JsonElement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_JsonElement = cpb.create();
+        }
+        return props_JsonElement;
       case LanguageConceptSwitch.JsonFile:
         if (props_JsonFile == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -61,13 +68,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.JsonNull:
         if (props_JsonNull == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("JsonNull");
+          cpb.presentationByName();
           props_JsonNull = cpb.create();
         }
         return props_JsonNull;
       case LanguageConceptSwitch.JsonObject:
         if (props_JsonObject == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
           props_JsonObject = cpb.create();
         }
         return props_JsonObject;
