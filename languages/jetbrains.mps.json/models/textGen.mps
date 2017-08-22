@@ -32,6 +32,9 @@
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
         <child id="1237305790512" name="value" index="lb14g" />
       </concept>
+      <concept id="1237305491868" name="jetbrains.mps.lang.textGen.structure.CollectionAppendPart" flags="ng" index="l9S2W">
+        <child id="1237305945551" name="list" index="lbANJ" />
+      </concept>
       <concept id="1237306079178" name="jetbrains.mps.lang.textGen.structure.AppendOperation" flags="nn" index="lc7rE">
         <child id="1237306115446" name="part" index="lcghm" />
       </concept>
@@ -46,6 +49,9 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
   </registry>
@@ -68,6 +74,23 @@
               <node concept="117lpO" id="7DR9$wWYx9l" role="2Oq$k0" />
               <node concept="3TrEf2" id="7DR9$wWYxnE" role="2OqNvi">
                 <ref role="3Tt5mk" to="igrf:7DR9$wWYdtW" resolve="document" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="7DR9$wWYyec">
+    <ref role="WuzLi" to="igrf:7DR9$wWYdtR" resolve="JsonDocument" />
+    <node concept="11bSqf" id="7DR9$wWYyed" role="11c4hB">
+      <node concept="3clFbS" id="7DR9$wWYyee" role="2VODD2">
+        <node concept="lc7rE" id="7DR9$wWYyeO" role="3cqZAp">
+          <node concept="l9S2W" id="7DR9$wWY$G6" role="lcghm">
+            <node concept="2OqwBi" id="7DR9$wWY$LV" role="lbANJ">
+              <node concept="117lpO" id="7DR9$wWY$Gu" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="7DR9$wWY$Y3" role="2OqNvi">
+                <ref role="3TtcxE" to="igrf:7DR9$wWYdtT" resolve="elements" />
               </node>
             </node>
           </node>
