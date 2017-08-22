@@ -216,6 +216,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -261,7 +262,7 @@
           </node>
         </node>
         <node concept="39e2AT" id="7" role="39e2AY">
-          <ref role="39e2AS" node="eb" resolve="getFileExtension_JsonFile" />
+          <ref role="39e2AS" node="ff" resolve="getFileExtension_JsonFile" />
         </node>
       </node>
     </node>
@@ -285,7 +286,7 @@
           </node>
         </node>
         <node concept="39e2AT" id="d" role="39e2AY">
-          <ref role="39e2AS" node="ea" resolve="getFileName_JsonFile" />
+          <ref role="39e2AS" node="fe" resolve="getFileName_JsonFile" />
         </node>
       </node>
     </node>
@@ -393,7 +394,7 @@
           </node>
         </node>
         <node concept="39e2AT" id="J" role="39e2AY">
-          <ref role="39e2AS" node="7t" resolve="JsonFile_TextGen" />
+          <ref role="39e2AS" node="89" resolve="JsonFile_TextGen" />
         </node>
       </node>
       <node concept="39e2AG" id="m" role="39e3Y0">
@@ -414,7 +415,7 @@
           </node>
         </node>
         <node concept="39e2AT" id="O" role="39e2AY">
-          <ref role="39e2AS" node="8f" resolve="JsonNull_TextGen" />
+          <ref role="39e2AS" node="8V" resolve="JsonNull_TextGen" />
         </node>
       </node>
       <node concept="39e2AG" id="n" role="39e3Y0">
@@ -435,7 +436,7 @@
           </node>
         </node>
         <node concept="39e2AT" id="T" role="39e2AY">
-          <ref role="39e2AS" node="9B" resolve="JsonNumber_TextGen" />
+          <ref role="39e2AS" node="aj" resolve="JsonNumber_TextGen" />
         </node>
       </node>
       <node concept="39e2AG" id="o" role="39e3Y0">
@@ -456,7 +457,7 @@
           </node>
         </node>
         <node concept="39e2AT" id="Y" role="39e2AY">
-          <ref role="39e2AS" node="bd" resolve="JsonObject_TextGen" />
+          <ref role="39e2AS" node="bT" resolve="JsonObject_TextGen" />
         </node>
       </node>
       <node concept="39e2AG" id="p" role="39e3Y0">
@@ -477,7 +478,7 @@
           </node>
         </node>
         <node concept="39e2AT" id="13" role="39e2AY">
-          <ref role="39e2AS" node="c6" resolve="JsonString_TextGen" />
+          <ref role="39e2AS" node="da" resolve="JsonString_TextGen" />
         </node>
       </node>
     </node>
@@ -486,7 +487,7 @@
       <node concept="39e2AG" id="17" role="39e3Y0">
         <property role="2mV_xN" value="true" />
         <node concept="39e2AT" id="18" role="39e2AY">
-          <ref role="39e2AS" node="e3" resolve="TextGenAspectDescriptor" />
+          <ref role="39e2AS" node="f7" resolve="TextGenAspectDescriptor" />
         </node>
       </node>
     </node>
@@ -1181,16 +1182,16 @@
       <node concept="3Tm1VV" id="5$" role="1B3o_S" />
       <node concept="3clFbS" id="5_" role="3clF47">
         <node concept="3cpWs8" id="5C" role="3cqZAp">
-          <node concept="3cpWsn" id="5G" role="3cpWs9">
+          <node concept="3cpWsn" id="5K" role="3cpWs9">
             <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="tgs" />
-            <node concept="3uibUv" id="5H" role="1tU5fm">
+            <node concept="3uibUv" id="5L" role="1tU5fm">
               <ref role="3uigEE" to="kpbf:~TextGenSupport" resolve="TextGenSupport" />
             </node>
-            <node concept="2ShNRf" id="5I" role="33vP2m">
-              <node concept="1pGfFk" id="5J" role="2ShVmc">
+            <node concept="2ShNRf" id="5M" role="33vP2m">
+              <node concept="1pGfFk" id="5N" role="2ShVmc">
                 <ref role="37wK5l" to="kpbf:~TextGenSupport.&lt;init&gt;(jetbrains.mps.text.rt.TextGenContext)" resolve="TextGenSupport" />
-                <node concept="37vLTw" id="5K" role="37wK5m">
+                <node concept="37vLTw" id="5O" role="37wK5m">
                   <ref role="3cqZAo" node="5A" resolve="ctx" />
                 </node>
               </node>
@@ -1198,116 +1199,163 @@
           </node>
         </node>
         <node concept="3clFbF" id="5D" role="3cqZAp">
-          <node concept="2OqwBi" id="5L" role="3clFbG">
-            <node concept="2OqwBi" id="5M" role="2Oq$k0">
-              <node concept="2OqwBi" id="5O" role="2Oq$k0">
-                <node concept="37vLTw" id="5Q" role="2Oq$k0">
+          <node concept="2OqwBi" id="5P" role="3clFbG">
+            <node concept="2OqwBi" id="5Q" role="2Oq$k0">
+              <node concept="2OqwBi" id="5S" role="2Oq$k0">
+                <node concept="37vLTw" id="5U" role="2Oq$k0">
                   <ref role="3cqZAo" node="5A" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="5R" role="2OqNvi">
+                <node concept="liA8E" id="5V" role="2OqNvi">
                   <ref role="37wK5l" to="yfwt:~TextGenContext.getBuffer():jetbrains.mps.text.TextBuffer" resolve="getBuffer" />
                 </node>
               </node>
-              <node concept="liA8E" id="5P" role="2OqNvi">
+              <node concept="liA8E" id="5T" role="2OqNvi">
                 <ref role="37wK5l" to="ao3:~TextBuffer.area():jetbrains.mps.text.TextArea" resolve="area" />
               </node>
             </node>
-            <node concept="liA8E" id="5N" role="2OqNvi">
+            <node concept="liA8E" id="5R" role="2OqNvi">
               <ref role="37wK5l" to="ao3:~TextArea.increaseIndent():jetbrains.mps.text.TextArea" resolve="increaseIndent" />
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="5E" role="3cqZAp">
-          <node concept="3clFbS" id="5S" role="3clFbx">
-            <node concept="3clFbF" id="5V" role="3cqZAp">
+        <node concept="3clFbH" id="5E" role="3cqZAp" />
+        <node concept="3clFbJ" id="5F" role="3cqZAp">
+          <node concept="3clFbS" id="5W" role="3clFbx">
+            <node concept="3clFbF" id="5Y" role="3cqZAp">
               <node concept="2OqwBi" id="61" role="3clFbG">
                 <node concept="37vLTw" id="62" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5G" resolve="tgs" />
+                  <ref role="3cqZAo" node="5K" resolve="tgs" />
                 </node>
                 <node concept="liA8E" id="63" role="2OqNvi">
+                  <ref role="37wK5l" to="kpbf:~TextGenSupport.decreaseIndent():jetbrains.mps.text.TextArea" resolve="decreaseIndent" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5Z" role="3cqZAp">
+              <node concept="2OqwBi" id="64" role="3clFbG">
+                <node concept="37vLTw" id="65" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5K" resolve="tgs" />
+                </node>
+                <node concept="liA8E" id="66" role="2OqNvi">
+                  <ref role="37wK5l" to="kpbf:~TextGenSupport.decreaseIndent():jetbrains.mps.text.TextArea" resolve="decreaseIndent" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="60" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="5X" role="3clFbw">
+            <node concept="2OqwBi" id="67" role="2Oq$k0">
+              <node concept="2OqwBi" id="69" role="2Oq$k0">
+                <node concept="2OqwBi" id="6b" role="2Oq$k0">
+                  <node concept="37vLTw" id="6d" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5A" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="6e" role="2OqNvi">
+                    <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
+                  </node>
+                </node>
+                <node concept="1mfA1w" id="6c" role="2OqNvi" />
+              </node>
+              <node concept="1mfA1w" id="6a" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="68" role="2OqNvi">
+              <node concept="chp4Y" id="6f" role="cj9EA">
+                <ref role="cht4Q" to="igrf:7DR9$wWYduh" resolve="JsonArray" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5G" role="3cqZAp">
+          <node concept="3clFbS" id="6g" role="3clFbx">
+            <node concept="3clFbF" id="6j" role="3cqZAp">
+              <node concept="2OqwBi" id="6p" role="3clFbG">
+                <node concept="37vLTw" id="6q" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5K" resolve="tgs" />
+                </node>
+                <node concept="liA8E" id="6r" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.indent():jetbrains.mps.text.TextArea" resolve="indent" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="5W" role="3cqZAp">
-              <node concept="2OqwBi" id="64" role="3clFbG">
-                <node concept="37vLTw" id="65" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5G" resolve="tgs" />
+            <node concept="3clFbF" id="6k" role="3cqZAp">
+              <node concept="2OqwBi" id="6s" role="3clFbG">
+                <node concept="37vLTw" id="6t" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5K" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="66" role="2OqNvi">
+                <node concept="liA8E" id="6u" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                  <node concept="Xl_RD" id="67" role="37wK5m">
+                  <node concept="Xl_RD" id="6v" role="37wK5m">
                     <property role="Xl_RC" value="&quot;" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="5X" role="3cqZAp">
-              <node concept="2OqwBi" id="68" role="3clFbG">
-                <node concept="37vLTw" id="69" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5G" resolve="tgs" />
+            <node concept="3clFbF" id="6l" role="3cqZAp">
+              <node concept="2OqwBi" id="6w" role="3clFbG">
+                <node concept="37vLTw" id="6x" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5K" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="6a" role="2OqNvi">
+                <node concept="liA8E" id="6y" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                  <node concept="2OqwBi" id="6b" role="37wK5m">
-                    <node concept="2OqwBi" id="6c" role="2Oq$k0">
-                      <node concept="37vLTw" id="6e" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6z" role="37wK5m">
+                    <node concept="2OqwBi" id="6$" role="2Oq$k0">
+                      <node concept="37vLTw" id="6A" role="2Oq$k0">
                         <ref role="3cqZAo" node="5A" resolve="ctx" />
                       </node>
-                      <node concept="liA8E" id="6f" role="2OqNvi">
+                      <node concept="liA8E" id="6B" role="2OqNvi">
                         <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                       </node>
                     </node>
-                    <node concept="3TrcHB" id="6d" role="2OqNvi">
+                    <node concept="3TrcHB" id="6_" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="5Y" role="3cqZAp">
-              <node concept="2OqwBi" id="6g" role="3clFbG">
-                <node concept="37vLTw" id="6h" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5G" resolve="tgs" />
+            <node concept="3clFbF" id="6m" role="3cqZAp">
+              <node concept="2OqwBi" id="6C" role="3clFbG">
+                <node concept="37vLTw" id="6D" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5K" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="6i" role="2OqNvi">
+                <node concept="liA8E" id="6E" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                  <node concept="Xl_RD" id="6j" role="37wK5m">
+                  <node concept="Xl_RD" id="6F" role="37wK5m">
                     <property role="Xl_RC" value="&quot;" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="5Z" role="3cqZAp">
-              <node concept="2OqwBi" id="6k" role="3clFbG">
-                <node concept="37vLTw" id="6l" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5G" resolve="tgs" />
+            <node concept="3clFbF" id="6n" role="3cqZAp">
+              <node concept="2OqwBi" id="6G" role="3clFbG">
+                <node concept="37vLTw" id="6H" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5K" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="6m" role="2OqNvi">
+                <node concept="liA8E" id="6I" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                  <node concept="Xl_RD" id="6n" role="37wK5m">
+                  <node concept="Xl_RD" id="6J" role="37wK5m">
                     <property role="Xl_RC" value=":" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="60" role="3cqZAp">
-              <node concept="2OqwBi" id="6o" role="3clFbG">
-                <node concept="37vLTw" id="6p" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5G" resolve="tgs" />
+            <node concept="3clFbF" id="6o" role="3cqZAp">
+              <node concept="2OqwBi" id="6K" role="3clFbG">
+                <node concept="37vLTw" id="6L" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5K" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="6q" role="2OqNvi">
+                <node concept="liA8E" id="6M" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="appendNode" />
-                  <node concept="2OqwBi" id="6r" role="37wK5m">
-                    <node concept="2OqwBi" id="6s" role="2Oq$k0">
-                      <node concept="37vLTw" id="6u" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6N" role="37wK5m">
+                    <node concept="2OqwBi" id="6O" role="2Oq$k0">
+                      <node concept="37vLTw" id="6Q" role="2Oq$k0">
                         <ref role="3cqZAo" node="5A" resolve="ctx" />
                       </node>
-                      <node concept="liA8E" id="6v" role="2OqNvi">
+                      <node concept="liA8E" id="6R" role="2OqNvi">
                         <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                       </node>
                     </node>
-                    <node concept="3TrEf2" id="6t" role="2OqNvi">
+                    <node concept="3TrEf2" id="6P" role="2OqNvi">
                       <ref role="3Tt5mk" to="igrf:4pwlIfuSOLl" resolve="value" />
                     </node>
                   </node>
@@ -1315,136 +1363,136 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbC" id="5T" role="3clFbw">
-            <node concept="10Nm6u" id="6w" role="3uHU7w" />
-            <node concept="2OqwBi" id="6x" role="3uHU7B">
-              <node concept="2OqwBi" id="6y" role="2Oq$k0">
-                <node concept="37vLTw" id="6$" role="2Oq$k0">
+          <node concept="3clFbC" id="6h" role="3clFbw">
+            <node concept="10Nm6u" id="6S" role="3uHU7w" />
+            <node concept="2OqwBi" id="6T" role="3uHU7B">
+              <node concept="2OqwBi" id="6U" role="2Oq$k0">
+                <node concept="37vLTw" id="6W" role="2Oq$k0">
                   <ref role="3cqZAo" node="5A" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="6_" role="2OqNvi">
+                <node concept="liA8E" id="6X" role="2OqNvi">
                   <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                 </node>
               </node>
-              <node concept="YCak7" id="6z" role="2OqNvi" />
+              <node concept="YCak7" id="6V" role="2OqNvi" />
             </node>
           </node>
-          <node concept="9aQIb" id="5U" role="9aQIa">
-            <node concept="3clFbS" id="6A" role="9aQI4">
-              <node concept="3clFbF" id="6B" role="3cqZAp">
-                <node concept="2OqwBi" id="6J" role="3clFbG">
-                  <node concept="37vLTw" id="6K" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5G" resolve="tgs" />
+          <node concept="9aQIb" id="6i" role="9aQIa">
+            <node concept="3clFbS" id="6Y" role="9aQI4">
+              <node concept="3clFbF" id="6Z" role="3cqZAp">
+                <node concept="2OqwBi" id="77" role="3clFbG">
+                  <node concept="37vLTw" id="78" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5K" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="6L" role="2OqNvi">
+                  <node concept="liA8E" id="79" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.indent():jetbrains.mps.text.TextArea" resolve="indent" />
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6C" role="3cqZAp">
-                <node concept="2OqwBi" id="6M" role="3clFbG">
-                  <node concept="37vLTw" id="6N" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5G" resolve="tgs" />
+              <node concept="3clFbF" id="70" role="3cqZAp">
+                <node concept="2OqwBi" id="7a" role="3clFbG">
+                  <node concept="37vLTw" id="7b" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5K" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="6O" role="2OqNvi">
+                  <node concept="liA8E" id="7c" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                    <node concept="Xl_RD" id="6P" role="37wK5m">
+                    <node concept="Xl_RD" id="7d" role="37wK5m">
                       <property role="Xl_RC" value="&quot;" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6D" role="3cqZAp">
-                <node concept="2OqwBi" id="6Q" role="3clFbG">
-                  <node concept="37vLTw" id="6R" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5G" resolve="tgs" />
+              <node concept="3clFbF" id="71" role="3cqZAp">
+                <node concept="2OqwBi" id="7e" role="3clFbG">
+                  <node concept="37vLTw" id="7f" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5K" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="6S" role="2OqNvi">
+                  <node concept="liA8E" id="7g" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                    <node concept="2OqwBi" id="6T" role="37wK5m">
-                      <node concept="2OqwBi" id="6U" role="2Oq$k0">
-                        <node concept="37vLTw" id="6W" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7h" role="37wK5m">
+                      <node concept="2OqwBi" id="7i" role="2Oq$k0">
+                        <node concept="37vLTw" id="7k" role="2Oq$k0">
                           <ref role="3cqZAo" node="5A" resolve="ctx" />
                         </node>
-                        <node concept="liA8E" id="6X" role="2OqNvi">
+                        <node concept="liA8E" id="7l" role="2OqNvi">
                           <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                         </node>
                       </node>
-                      <node concept="3TrcHB" id="6V" role="2OqNvi">
+                      <node concept="3TrcHB" id="7j" role="2OqNvi">
                         <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6E" role="3cqZAp">
-                <node concept="2OqwBi" id="6Y" role="3clFbG">
-                  <node concept="37vLTw" id="6Z" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5G" resolve="tgs" />
+              <node concept="3clFbF" id="72" role="3cqZAp">
+                <node concept="2OqwBi" id="7m" role="3clFbG">
+                  <node concept="37vLTw" id="7n" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5K" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="70" role="2OqNvi">
+                  <node concept="liA8E" id="7o" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                    <node concept="Xl_RD" id="71" role="37wK5m">
+                    <node concept="Xl_RD" id="7p" role="37wK5m">
                       <property role="Xl_RC" value="&quot;" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6F" role="3cqZAp">
-                <node concept="2OqwBi" id="72" role="3clFbG">
-                  <node concept="37vLTw" id="73" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5G" resolve="tgs" />
+              <node concept="3clFbF" id="73" role="3cqZAp">
+                <node concept="2OqwBi" id="7q" role="3clFbG">
+                  <node concept="37vLTw" id="7r" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5K" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="74" role="2OqNvi">
+                  <node concept="liA8E" id="7s" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                    <node concept="Xl_RD" id="75" role="37wK5m">
+                    <node concept="Xl_RD" id="7t" role="37wK5m">
                       <property role="Xl_RC" value=":" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6G" role="3cqZAp">
-                <node concept="2OqwBi" id="76" role="3clFbG">
-                  <node concept="37vLTw" id="77" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5G" resolve="tgs" />
+              <node concept="3clFbF" id="74" role="3cqZAp">
+                <node concept="2OqwBi" id="7u" role="3clFbG">
+                  <node concept="37vLTw" id="7v" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5K" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="78" role="2OqNvi">
+                  <node concept="liA8E" id="7w" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="appendNode" />
-                    <node concept="2OqwBi" id="79" role="37wK5m">
-                      <node concept="2OqwBi" id="7a" role="2Oq$k0">
-                        <node concept="37vLTw" id="7c" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7x" role="37wK5m">
+                      <node concept="2OqwBi" id="7y" role="2Oq$k0">
+                        <node concept="37vLTw" id="7$" role="2Oq$k0">
                           <ref role="3cqZAo" node="5A" resolve="ctx" />
                         </node>
-                        <node concept="liA8E" id="7d" role="2OqNvi">
+                        <node concept="liA8E" id="7_" role="2OqNvi">
                           <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                         </node>
                       </node>
-                      <node concept="3TrEf2" id="7b" role="2OqNvi">
+                      <node concept="3TrEf2" id="7z" role="2OqNvi">
                         <ref role="3Tt5mk" to="igrf:4pwlIfuSOLl" resolve="value" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6H" role="3cqZAp">
-                <node concept="2OqwBi" id="7e" role="3clFbG">
-                  <node concept="37vLTw" id="7f" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5G" resolve="tgs" />
+              <node concept="3clFbF" id="75" role="3cqZAp">
+                <node concept="2OqwBi" id="7A" role="3clFbG">
+                  <node concept="37vLTw" id="7B" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5K" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="7g" role="2OqNvi">
+                  <node concept="liA8E" id="7C" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                    <node concept="Xl_RD" id="7h" role="37wK5m">
+                    <node concept="Xl_RD" id="7D" role="37wK5m">
                       <property role="Xl_RC" value="," />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="6I" role="3cqZAp">
-                <node concept="2OqwBi" id="7i" role="3clFbG">
-                  <node concept="37vLTw" id="7j" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5G" resolve="tgs" />
+              <node concept="3clFbF" id="76" role="3cqZAp">
+                <node concept="2OqwBi" id="7E" role="3clFbG">
+                  <node concept="37vLTw" id="7F" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5K" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="7k" role="2OqNvi">
+                  <node concept="liA8E" id="7G" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.newLine():jetbrains.mps.text.TextArea" resolve="newLine" />
                   </node>
                 </node>
@@ -1452,22 +1500,69 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5F" role="3cqZAp">
-          <node concept="2OqwBi" id="7l" role="3clFbG">
-            <node concept="2OqwBi" id="7m" role="2Oq$k0">
-              <node concept="2OqwBi" id="7o" role="2Oq$k0">
-                <node concept="37vLTw" id="7q" role="2Oq$k0">
+        <node concept="3clFbJ" id="5H" role="3cqZAp">
+          <node concept="3clFbS" id="7H" role="3clFbx">
+            <node concept="3clFbF" id="7J" role="3cqZAp">
+              <node concept="2OqwBi" id="7M" role="3clFbG">
+                <node concept="37vLTw" id="7N" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5K" resolve="tgs" />
+                </node>
+                <node concept="liA8E" id="7O" role="2OqNvi">
+                  <ref role="37wK5l" to="kpbf:~TextGenSupport.increaseIndent():jetbrains.mps.text.TextArea" resolve="increaseIndent" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7K" role="3cqZAp">
+              <node concept="2OqwBi" id="7P" role="3clFbG">
+                <node concept="37vLTw" id="7Q" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5K" resolve="tgs" />
+                </node>
+                <node concept="liA8E" id="7R" role="2OqNvi">
+                  <ref role="37wK5l" to="kpbf:~TextGenSupport.increaseIndent():jetbrains.mps.text.TextArea" resolve="increaseIndent" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="7L" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="7I" role="3clFbw">
+            <node concept="2OqwBi" id="7S" role="2Oq$k0">
+              <node concept="2OqwBi" id="7U" role="2Oq$k0">
+                <node concept="2OqwBi" id="7W" role="2Oq$k0">
+                  <node concept="37vLTw" id="7Y" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5A" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="7Z" role="2OqNvi">
+                    <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
+                  </node>
+                </node>
+                <node concept="1mfA1w" id="7X" role="2OqNvi" />
+              </node>
+              <node concept="1mfA1w" id="7V" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="7T" role="2OqNvi">
+              <node concept="chp4Y" id="80" role="cj9EA">
+                <ref role="cht4Q" to="igrf:7DR9$wWYduh" resolve="JsonArray" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5I" role="3cqZAp" />
+        <node concept="3clFbF" id="5J" role="3cqZAp">
+          <node concept="2OqwBi" id="81" role="3clFbG">
+            <node concept="2OqwBi" id="82" role="2Oq$k0">
+              <node concept="2OqwBi" id="84" role="2Oq$k0">
+                <node concept="37vLTw" id="86" role="2Oq$k0">
                   <ref role="3cqZAo" node="5A" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="7r" role="2OqNvi">
+                <node concept="liA8E" id="87" role="2OqNvi">
                   <ref role="37wK5l" to="yfwt:~TextGenContext.getBuffer():jetbrains.mps.text.TextBuffer" resolve="getBuffer" />
                 </node>
               </node>
-              <node concept="liA8E" id="7p" role="2OqNvi">
+              <node concept="liA8E" id="85" role="2OqNvi">
                 <ref role="37wK5l" to="ao3:~TextBuffer.area():jetbrains.mps.text.TextArea" resolve="area" />
               </node>
             </node>
-            <node concept="liA8E" id="7n" role="2OqNvi">
+            <node concept="liA8E" id="83" role="2OqNvi">
               <ref role="37wK5l" to="ao3:~TextArea.decreaseIndent():jetbrains.mps.text.TextArea" resolve="decreaseIndent" />
             </node>
           </node>
@@ -1476,7 +1571,7 @@
       <node concept="37vLTG" id="5A" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="7s" role="1tU5fm">
+        <node concept="3uibUv" id="88" role="1tU5fm">
           <ref role="3uigEE" to="yfwt:~TextGenContext" resolve="TextGenContext" />
         </node>
       </node>
@@ -1485,280 +1580,280 @@
       </node>
     </node>
   </node>
-  <node concept="312cEu" id="7t">
+  <node concept="312cEu" id="89">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="JsonFile_TextGen" />
-    <node concept="3Tm1VV" id="7u" role="1B3o_S" />
-    <node concept="3uibUv" id="7v" role="1zkMxy">
+    <node concept="3Tm1VV" id="8a" role="1B3o_S" />
+    <node concept="3uibUv" id="8b" role="1zkMxy">
       <ref role="3uigEE" to="yfwt:~TextGenDescriptorBase" resolve="TextGenDescriptorBase" />
     </node>
-    <node concept="3clFb_" id="7w" role="jymVt">
+    <node concept="3clFb_" id="8c" role="jymVt">
       <property role="TrG5h" value="generateText" />
-      <node concept="3cqZAl" id="7x" role="3clF45" />
-      <node concept="3Tm1VV" id="7y" role="1B3o_S" />
-      <node concept="3clFbS" id="7z" role="3clF47">
-        <node concept="3cpWs8" id="7A" role="3cqZAp">
-          <node concept="3cpWsn" id="7G" role="3cpWs9">
+      <node concept="3cqZAl" id="8d" role="3clF45" />
+      <node concept="3Tm1VV" id="8e" role="1B3o_S" />
+      <node concept="3clFbS" id="8f" role="3clF47">
+        <node concept="3cpWs8" id="8i" role="3cqZAp">
+          <node concept="3cpWsn" id="8o" role="3cpWs9">
             <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="tgs" />
-            <node concept="3uibUv" id="7H" role="1tU5fm">
+            <node concept="3uibUv" id="8p" role="1tU5fm">
               <ref role="3uigEE" to="kpbf:~TextGenSupport" resolve="TextGenSupport" />
             </node>
-            <node concept="2ShNRf" id="7I" role="33vP2m">
-              <node concept="1pGfFk" id="7J" role="2ShVmc">
+            <node concept="2ShNRf" id="8q" role="33vP2m">
+              <node concept="1pGfFk" id="8r" role="2ShVmc">
                 <ref role="37wK5l" to="kpbf:~TextGenSupport.&lt;init&gt;(jetbrains.mps.text.rt.TextGenContext)" resolve="TextGenSupport" />
-                <node concept="37vLTw" id="7K" role="37wK5m">
-                  <ref role="3cqZAo" node="7$" resolve="ctx" />
+                <node concept="37vLTw" id="8s" role="37wK5m">
+                  <ref role="3cqZAo" node="8g" resolve="ctx" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7B" role="3cqZAp">
-          <node concept="2OqwBi" id="7L" role="3clFbG">
-            <node concept="37vLTw" id="7N" role="2Oq$k0">
-              <ref role="3cqZAo" node="7G" resolve="tgs" />
+        <node concept="3clFbF" id="8j" role="3cqZAp">
+          <node concept="2OqwBi" id="8t" role="3clFbG">
+            <node concept="37vLTw" id="8v" role="2Oq$k0">
+              <ref role="3cqZAo" node="8o" resolve="tgs" />
             </node>
-            <node concept="liA8E" id="7O" role="2OqNvi">
+            <node concept="liA8E" id="8w" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-              <node concept="Xl_RD" id="7P" role="37wK5m">
+              <node concept="Xl_RD" id="8x" role="37wK5m">
                 <property role="Xl_RC" value="[" />
               </node>
             </node>
           </node>
-          <node concept="1KehLL" id="7M" role="lGtFl">
+          <node concept="1KehLL" id="8u" role="lGtFl">
             <property role="1K8rM7" value="Constant_yuehr3_c0" />
             <property role="1Kfyot" value="left" />
           </node>
         </node>
-        <node concept="3clFbF" id="7C" role="3cqZAp">
-          <node concept="2OqwBi" id="7Q" role="3clFbG">
-            <node concept="37vLTw" id="7S" role="2Oq$k0">
-              <ref role="3cqZAo" node="7G" resolve="tgs" />
+        <node concept="3clFbF" id="8k" role="3cqZAp">
+          <node concept="2OqwBi" id="8y" role="3clFbG">
+            <node concept="37vLTw" id="8$" role="2Oq$k0">
+              <ref role="3cqZAo" node="8o" resolve="tgs" />
             </node>
-            <node concept="liA8E" id="7T" role="2OqNvi">
+            <node concept="liA8E" id="8_" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.newLine():jetbrains.mps.text.TextArea" resolve="newLine" />
             </node>
           </node>
-          <node concept="1KehLL" id="7R" role="lGtFl">
+          <node concept="1KehLL" id="8z" role="lGtFl">
             <property role="1K8rM7" value="Constant_yuehr3_c0" />
             <property role="1Kfyot" value="left" />
           </node>
         </node>
-        <node concept="1DcWWT" id="7D" role="3cqZAp">
-          <node concept="3clFbS" id="7U" role="2LFqv$">
-            <node concept="3clFbF" id="7X" role="3cqZAp">
-              <node concept="2OqwBi" id="7Y" role="3clFbG">
-                <node concept="37vLTw" id="7Z" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7G" resolve="tgs" />
+        <node concept="1DcWWT" id="8l" role="3cqZAp">
+          <node concept="3clFbS" id="8A" role="2LFqv$">
+            <node concept="3clFbF" id="8D" role="3cqZAp">
+              <node concept="2OqwBi" id="8E" role="3clFbG">
+                <node concept="37vLTw" id="8F" role="2Oq$k0">
+                  <ref role="3cqZAo" node="8o" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="80" role="2OqNvi">
+                <node concept="liA8E" id="8G" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="appendNode" />
-                  <node concept="37vLTw" id="81" role="37wK5m">
-                    <ref role="3cqZAo" node="7V" resolve="item" />
+                  <node concept="37vLTw" id="8H" role="37wK5m">
+                    <ref role="3cqZAo" node="8B" resolve="item" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3cpWsn" id="7V" role="1Duv9x">
+          <node concept="3cpWsn" id="8B" role="1Duv9x">
             <property role="TrG5h" value="item" />
-            <node concept="3Tqbb2" id="82" role="1tU5fm" />
+            <node concept="3Tqbb2" id="8I" role="1tU5fm" />
           </node>
-          <node concept="2OqwBi" id="7W" role="1DdaDG">
-            <node concept="2OqwBi" id="83" role="2Oq$k0">
-              <node concept="37vLTw" id="85" role="2Oq$k0">
-                <ref role="3cqZAo" node="7$" resolve="ctx" />
+          <node concept="2OqwBi" id="8C" role="1DdaDG">
+            <node concept="2OqwBi" id="8J" role="2Oq$k0">
+              <node concept="37vLTw" id="8L" role="2Oq$k0">
+                <ref role="3cqZAo" node="8g" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="86" role="2OqNvi">
+              <node concept="liA8E" id="8M" role="2OqNvi">
                 <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
               </node>
             </node>
-            <node concept="3Tsc0h" id="84" role="2OqNvi">
+            <node concept="3Tsc0h" id="8K" role="2OqNvi">
               <ref role="3TtcxE" to="igrf:7DR9$wWYdtW" resolve="objects" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7E" role="3cqZAp">
-          <node concept="2OqwBi" id="87" role="3clFbG">
-            <node concept="37vLTw" id="88" role="2Oq$k0">
-              <ref role="3cqZAo" node="7G" resolve="tgs" />
+        <node concept="3clFbF" id="8m" role="3cqZAp">
+          <node concept="2OqwBi" id="8N" role="3clFbG">
+            <node concept="37vLTw" id="8O" role="2Oq$k0">
+              <ref role="3cqZAo" node="8o" resolve="tgs" />
             </node>
-            <node concept="liA8E" id="89" role="2OqNvi">
+            <node concept="liA8E" id="8P" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.newLine():jetbrains.mps.text.TextArea" resolve="newLine" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7F" role="3cqZAp">
-          <node concept="2OqwBi" id="8a" role="3clFbG">
-            <node concept="37vLTw" id="8b" role="2Oq$k0">
-              <ref role="3cqZAo" node="7G" resolve="tgs" />
+        <node concept="3clFbF" id="8n" role="3cqZAp">
+          <node concept="2OqwBi" id="8Q" role="3clFbG">
+            <node concept="37vLTw" id="8R" role="2Oq$k0">
+              <ref role="3cqZAo" node="8o" resolve="tgs" />
             </node>
-            <node concept="liA8E" id="8c" role="2OqNvi">
+            <node concept="liA8E" id="8S" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-              <node concept="Xl_RD" id="8d" role="37wK5m">
+              <node concept="Xl_RD" id="8T" role="37wK5m">
                 <property role="Xl_RC" value="]" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="37vLTG" id="7$" role="3clF46">
+      <node concept="37vLTG" id="8g" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="8e" role="1tU5fm">
+        <node concept="3uibUv" id="8U" role="1tU5fm">
           <ref role="3uigEE" to="yfwt:~TextGenContext" resolve="TextGenContext" />
         </node>
       </node>
-      <node concept="2AHcQZ" id="7_" role="2AJF6D">
+      <node concept="2AHcQZ" id="8h" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
-  <node concept="312cEu" id="8f">
+  <node concept="312cEu" id="8V">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="JsonNull_TextGen" />
-    <node concept="3Tm1VV" id="8g" role="1B3o_S" />
-    <node concept="3uibUv" id="8h" role="1zkMxy">
+    <node concept="3Tm1VV" id="8W" role="1B3o_S" />
+    <node concept="3uibUv" id="8X" role="1zkMxy">
       <ref role="3uigEE" to="yfwt:~TextGenDescriptorBase" resolve="TextGenDescriptorBase" />
     </node>
-    <node concept="3clFb_" id="8i" role="jymVt">
+    <node concept="3clFb_" id="8Y" role="jymVt">
       <property role="TrG5h" value="generateText" />
-      <node concept="3cqZAl" id="8j" role="3clF45" />
-      <node concept="3Tm1VV" id="8k" role="1B3o_S" />
-      <node concept="3clFbS" id="8l" role="3clF47">
-        <node concept="3cpWs8" id="8o" role="3cqZAp">
-          <node concept="3cpWsn" id="8v" role="3cpWs9">
+      <node concept="3cqZAl" id="8Z" role="3clF45" />
+      <node concept="3Tm1VV" id="90" role="1B3o_S" />
+      <node concept="3clFbS" id="91" role="3clF47">
+        <node concept="3cpWs8" id="94" role="3cqZAp">
+          <node concept="3cpWsn" id="9b" role="3cpWs9">
             <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="tgs" />
-            <node concept="3uibUv" id="8w" role="1tU5fm">
+            <node concept="3uibUv" id="9c" role="1tU5fm">
               <ref role="3uigEE" to="kpbf:~TextGenSupport" resolve="TextGenSupport" />
             </node>
-            <node concept="2ShNRf" id="8x" role="33vP2m">
-              <node concept="1pGfFk" id="8y" role="2ShVmc">
+            <node concept="2ShNRf" id="9d" role="33vP2m">
+              <node concept="1pGfFk" id="9e" role="2ShVmc">
                 <ref role="37wK5l" to="kpbf:~TextGenSupport.&lt;init&gt;(jetbrains.mps.text.rt.TextGenContext)" resolve="TextGenSupport" />
-                <node concept="37vLTw" id="8z" role="37wK5m">
-                  <ref role="3cqZAo" node="8m" resolve="ctx" />
+                <node concept="37vLTw" id="9f" role="37wK5m">
+                  <ref role="3cqZAo" node="92" resolve="ctx" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="8p" role="3cqZAp" />
-        <node concept="3clFbJ" id="8q" role="3cqZAp">
-          <node concept="3clFbS" id="8$" role="3clFbx">
-            <node concept="3clFbF" id="8A" role="3cqZAp">
-              <node concept="2OqwBi" id="8C" role="3clFbG">
-                <node concept="37vLTw" id="8D" role="2Oq$k0">
-                  <ref role="3cqZAo" node="8v" resolve="tgs" />
+        <node concept="3clFbH" id="95" role="3cqZAp" />
+        <node concept="3clFbJ" id="96" role="3cqZAp">
+          <node concept="3clFbS" id="9g" role="3clFbx">
+            <node concept="3clFbF" id="9i" role="3cqZAp">
+              <node concept="2OqwBi" id="9k" role="3clFbG">
+                <node concept="37vLTw" id="9l" role="2Oq$k0">
+                  <ref role="3cqZAo" node="9b" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="8E" role="2OqNvi">
+                <node concept="liA8E" id="9m" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.decreaseIndent():jetbrains.mps.text.TextArea" resolve="decreaseIndent" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="8B" role="3cqZAp">
-              <node concept="2OqwBi" id="8F" role="3clFbG">
-                <node concept="37vLTw" id="8G" role="2Oq$k0">
-                  <ref role="3cqZAo" node="8v" resolve="tgs" />
+            <node concept="3clFbF" id="9j" role="3cqZAp">
+              <node concept="2OqwBi" id="9n" role="3clFbG">
+                <node concept="37vLTw" id="9o" role="2Oq$k0">
+                  <ref role="3cqZAo" node="9b" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="8H" role="2OqNvi">
+                <node concept="liA8E" id="9p" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.decreaseIndent():jetbrains.mps.text.TextArea" resolve="decreaseIndent" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="8_" role="3clFbw">
-            <node concept="2OqwBi" id="8I" role="2Oq$k0">
-              <node concept="2OqwBi" id="8K" role="2Oq$k0">
-                <node concept="37vLTw" id="8M" role="2Oq$k0">
-                  <ref role="3cqZAo" node="8m" resolve="ctx" />
+          <node concept="2OqwBi" id="9h" role="3clFbw">
+            <node concept="2OqwBi" id="9q" role="2Oq$k0">
+              <node concept="2OqwBi" id="9s" role="2Oq$k0">
+                <node concept="37vLTw" id="9u" role="2Oq$k0">
+                  <ref role="3cqZAo" node="92" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="8N" role="2OqNvi">
+                <node concept="liA8E" id="9v" role="2OqNvi">
                   <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                 </node>
               </node>
-              <node concept="1mfA1w" id="8L" role="2OqNvi" />
+              <node concept="1mfA1w" id="9t" role="2OqNvi" />
             </node>
-            <node concept="1mIQ4w" id="8J" role="2OqNvi">
-              <node concept="chp4Y" id="8O" role="cj9EA">
+            <node concept="1mIQ4w" id="9r" role="2OqNvi">
+              <node concept="chp4Y" id="9w" role="cj9EA">
                 <ref role="cht4Q" to="igrf:4pwlIfuSOLk" resolve="JsonElement" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="8r" role="3cqZAp" />
-        <node concept="3clFbJ" id="8s" role="3cqZAp">
-          <node concept="3clFbS" id="8P" role="3clFbx">
-            <node concept="3clFbF" id="8S" role="3cqZAp">
-              <node concept="2OqwBi" id="8U" role="3clFbG">
-                <node concept="37vLTw" id="8V" role="2Oq$k0">
-                  <ref role="3cqZAo" node="8v" resolve="tgs" />
+        <node concept="3clFbH" id="97" role="3cqZAp" />
+        <node concept="3clFbJ" id="98" role="3cqZAp">
+          <node concept="3clFbS" id="9x" role="3clFbx">
+            <node concept="3clFbF" id="9$" role="3cqZAp">
+              <node concept="2OqwBi" id="9A" role="3clFbG">
+                <node concept="37vLTw" id="9B" role="2Oq$k0">
+                  <ref role="3cqZAo" node="9b" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="8W" role="2OqNvi">
+                <node concept="liA8E" id="9C" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.indent():jetbrains.mps.text.TextArea" resolve="indent" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="8T" role="3cqZAp">
-              <node concept="2OqwBi" id="8X" role="3clFbG">
-                <node concept="37vLTw" id="8Y" role="2Oq$k0">
-                  <ref role="3cqZAo" node="8v" resolve="tgs" />
+            <node concept="3clFbF" id="9_" role="3cqZAp">
+              <node concept="2OqwBi" id="9D" role="3clFbG">
+                <node concept="37vLTw" id="9E" role="2Oq$k0">
+                  <ref role="3cqZAo" node="9b" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="8Z" role="2OqNvi">
+                <node concept="liA8E" id="9F" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                  <node concept="Xl_RD" id="90" role="37wK5m">
+                  <node concept="Xl_RD" id="9G" role="37wK5m">
                     <property role="Xl_RC" value="null" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3clFbC" id="8Q" role="3clFbw">
-            <node concept="10Nm6u" id="91" role="3uHU7w" />
-            <node concept="2OqwBi" id="92" role="3uHU7B">
-              <node concept="2OqwBi" id="93" role="2Oq$k0">
-                <node concept="37vLTw" id="95" role="2Oq$k0">
-                  <ref role="3cqZAo" node="8m" resolve="ctx" />
+          <node concept="3clFbC" id="9y" role="3clFbw">
+            <node concept="10Nm6u" id="9H" role="3uHU7w" />
+            <node concept="2OqwBi" id="9I" role="3uHU7B">
+              <node concept="2OqwBi" id="9J" role="2Oq$k0">
+                <node concept="37vLTw" id="9L" role="2Oq$k0">
+                  <ref role="3cqZAo" node="92" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="96" role="2OqNvi">
+                <node concept="liA8E" id="9M" role="2OqNvi">
                   <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                 </node>
               </node>
-              <node concept="YCak7" id="94" role="2OqNvi" />
+              <node concept="YCak7" id="9K" role="2OqNvi" />
             </node>
           </node>
-          <node concept="9aQIb" id="8R" role="9aQIa">
-            <node concept="3clFbS" id="97" role="9aQI4">
-              <node concept="3clFbF" id="98" role="3cqZAp">
-                <node concept="2OqwBi" id="9b" role="3clFbG">
-                  <node concept="37vLTw" id="9c" role="2Oq$k0">
-                    <ref role="3cqZAo" node="8v" resolve="tgs" />
+          <node concept="9aQIb" id="9z" role="9aQIa">
+            <node concept="3clFbS" id="9N" role="9aQI4">
+              <node concept="3clFbF" id="9O" role="3cqZAp">
+                <node concept="2OqwBi" id="9R" role="3clFbG">
+                  <node concept="37vLTw" id="9S" role="2Oq$k0">
+                    <ref role="3cqZAo" node="9b" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="9d" role="2OqNvi">
+                  <node concept="liA8E" id="9T" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.indent():jetbrains.mps.text.TextArea" resolve="indent" />
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="99" role="3cqZAp">
-                <node concept="2OqwBi" id="9e" role="3clFbG">
-                  <node concept="37vLTw" id="9f" role="2Oq$k0">
-                    <ref role="3cqZAo" node="8v" resolve="tgs" />
+              <node concept="3clFbF" id="9P" role="3cqZAp">
+                <node concept="2OqwBi" id="9U" role="3clFbG">
+                  <node concept="37vLTw" id="9V" role="2Oq$k0">
+                    <ref role="3cqZAo" node="9b" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="9g" role="2OqNvi">
+                  <node concept="liA8E" id="9W" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                    <node concept="Xl_RD" id="9h" role="37wK5m">
+                    <node concept="Xl_RD" id="9X" role="37wK5m">
                       <property role="Xl_RC" value="null," />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="9a" role="3cqZAp">
-                <node concept="2OqwBi" id="9i" role="3clFbG">
-                  <node concept="37vLTw" id="9j" role="2Oq$k0">
-                    <ref role="3cqZAo" node="8v" resolve="tgs" />
+              <node concept="3clFbF" id="9Q" role="3cqZAp">
+                <node concept="2OqwBi" id="9Y" role="3clFbG">
+                  <node concept="37vLTw" id="9Z" role="2Oq$k0">
+                    <ref role="3cqZAo" node="9b" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="9k" role="2OqNvi">
+                  <node concept="liA8E" id="a0" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.newLine():jetbrains.mps.text.TextArea" resolve="newLine" />
                   </node>
                 </node>
@@ -1766,164 +1861,164 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="8t" role="3cqZAp">
-          <node concept="3clFbS" id="9l" role="3clFbx">
-            <node concept="3clFbF" id="9n" role="3cqZAp">
-              <node concept="2OqwBi" id="9p" role="3clFbG">
-                <node concept="37vLTw" id="9q" role="2Oq$k0">
-                  <ref role="3cqZAo" node="8v" resolve="tgs" />
+        <node concept="3clFbJ" id="99" role="3cqZAp">
+          <node concept="3clFbS" id="a1" role="3clFbx">
+            <node concept="3clFbF" id="a3" role="3cqZAp">
+              <node concept="2OqwBi" id="a5" role="3clFbG">
+                <node concept="37vLTw" id="a6" role="2Oq$k0">
+                  <ref role="3cqZAo" node="9b" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="9r" role="2OqNvi">
+                <node concept="liA8E" id="a7" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.increaseIndent():jetbrains.mps.text.TextArea" resolve="increaseIndent" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="9o" role="3cqZAp">
-              <node concept="2OqwBi" id="9s" role="3clFbG">
-                <node concept="37vLTw" id="9t" role="2Oq$k0">
-                  <ref role="3cqZAo" node="8v" resolve="tgs" />
+            <node concept="3clFbF" id="a4" role="3cqZAp">
+              <node concept="2OqwBi" id="a8" role="3clFbG">
+                <node concept="37vLTw" id="a9" role="2Oq$k0">
+                  <ref role="3cqZAo" node="9b" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="9u" role="2OqNvi">
+                <node concept="liA8E" id="aa" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.increaseIndent():jetbrains.mps.text.TextArea" resolve="increaseIndent" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="9m" role="3clFbw">
-            <node concept="2OqwBi" id="9v" role="2Oq$k0">
-              <node concept="2OqwBi" id="9x" role="2Oq$k0">
-                <node concept="37vLTw" id="9z" role="2Oq$k0">
-                  <ref role="3cqZAo" node="8m" resolve="ctx" />
+          <node concept="2OqwBi" id="a2" role="3clFbw">
+            <node concept="2OqwBi" id="ab" role="2Oq$k0">
+              <node concept="2OqwBi" id="ad" role="2Oq$k0">
+                <node concept="37vLTw" id="af" role="2Oq$k0">
+                  <ref role="3cqZAo" node="92" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="9$" role="2OqNvi">
+                <node concept="liA8E" id="ag" role="2OqNvi">
                   <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                 </node>
               </node>
-              <node concept="1mfA1w" id="9y" role="2OqNvi" />
+              <node concept="1mfA1w" id="ae" role="2OqNvi" />
             </node>
-            <node concept="1mIQ4w" id="9w" role="2OqNvi">
-              <node concept="chp4Y" id="9_" role="cj9EA">
+            <node concept="1mIQ4w" id="ac" role="2OqNvi">
+              <node concept="chp4Y" id="ah" role="cj9EA">
                 <ref role="cht4Q" to="igrf:4pwlIfuSOLk" resolve="JsonElement" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="8u" role="3cqZAp" />
+        <node concept="3clFbH" id="9a" role="3cqZAp" />
       </node>
-      <node concept="37vLTG" id="8m" role="3clF46">
+      <node concept="37vLTG" id="92" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="9A" role="1tU5fm">
+        <node concept="3uibUv" id="ai" role="1tU5fm">
           <ref role="3uigEE" to="yfwt:~TextGenContext" resolve="TextGenContext" />
         </node>
       </node>
-      <node concept="2AHcQZ" id="8n" role="2AJF6D">
+      <node concept="2AHcQZ" id="93" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
-  <node concept="312cEu" id="9B">
+  <node concept="312cEu" id="aj">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="JsonNumber_TextGen" />
-    <node concept="3Tm1VV" id="9C" role="1B3o_S" />
-    <node concept="3uibUv" id="9D" role="1zkMxy">
+    <node concept="3Tm1VV" id="ak" role="1B3o_S" />
+    <node concept="3uibUv" id="al" role="1zkMxy">
       <ref role="3uigEE" to="yfwt:~TextGenDescriptorBase" resolve="TextGenDescriptorBase" />
     </node>
-    <node concept="3clFb_" id="9E" role="jymVt">
+    <node concept="3clFb_" id="am" role="jymVt">
       <property role="TrG5h" value="generateText" />
-      <node concept="3cqZAl" id="9F" role="3clF45" />
-      <node concept="3Tm1VV" id="9G" role="1B3o_S" />
-      <node concept="3clFbS" id="9H" role="3clF47">
-        <node concept="3cpWs8" id="9K" role="3cqZAp">
-          <node concept="3cpWsn" id="9S" role="3cpWs9">
+      <node concept="3cqZAl" id="an" role="3clF45" />
+      <node concept="3Tm1VV" id="ao" role="1B3o_S" />
+      <node concept="3clFbS" id="ap" role="3clF47">
+        <node concept="3cpWs8" id="as" role="3cqZAp">
+          <node concept="3cpWsn" id="a$" role="3cpWs9">
             <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="tgs" />
-            <node concept="3uibUv" id="9T" role="1tU5fm">
+            <node concept="3uibUv" id="a_" role="1tU5fm">
               <ref role="3uigEE" to="kpbf:~TextGenSupport" resolve="TextGenSupport" />
             </node>
-            <node concept="2ShNRf" id="9U" role="33vP2m">
-              <node concept="1pGfFk" id="9V" role="2ShVmc">
+            <node concept="2ShNRf" id="aA" role="33vP2m">
+              <node concept="1pGfFk" id="aB" role="2ShVmc">
                 <ref role="37wK5l" to="kpbf:~TextGenSupport.&lt;init&gt;(jetbrains.mps.text.rt.TextGenContext)" resolve="TextGenSupport" />
-                <node concept="37vLTw" id="9W" role="37wK5m">
-                  <ref role="3cqZAo" node="9I" resolve="ctx" />
+                <node concept="37vLTw" id="aC" role="37wK5m">
+                  <ref role="3cqZAo" node="aq" resolve="ctx" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="9L" role="3cqZAp" />
-        <node concept="3clFbJ" id="9M" role="3cqZAp">
-          <node concept="3clFbS" id="9X" role="3clFbx">
-            <node concept="3clFbF" id="9Z" role="3cqZAp">
-              <node concept="2OqwBi" id="a1" role="3clFbG">
-                <node concept="37vLTw" id="a2" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9S" resolve="tgs" />
+        <node concept="3clFbH" id="at" role="3cqZAp" />
+        <node concept="3clFbJ" id="au" role="3cqZAp">
+          <node concept="3clFbS" id="aD" role="3clFbx">
+            <node concept="3clFbF" id="aF" role="3cqZAp">
+              <node concept="2OqwBi" id="aH" role="3clFbG">
+                <node concept="37vLTw" id="aI" role="2Oq$k0">
+                  <ref role="3cqZAo" node="a$" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="a3" role="2OqNvi">
+                <node concept="liA8E" id="aJ" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.decreaseIndent():jetbrains.mps.text.TextArea" resolve="decreaseIndent" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="a0" role="3cqZAp">
-              <node concept="2OqwBi" id="a4" role="3clFbG">
-                <node concept="37vLTw" id="a5" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9S" resolve="tgs" />
+            <node concept="3clFbF" id="aG" role="3cqZAp">
+              <node concept="2OqwBi" id="aK" role="3clFbG">
+                <node concept="37vLTw" id="aL" role="2Oq$k0">
+                  <ref role="3cqZAo" node="a$" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="a6" role="2OqNvi">
+                <node concept="liA8E" id="aM" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.decreaseIndent():jetbrains.mps.text.TextArea" resolve="decreaseIndent" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="9Y" role="3clFbw">
-            <node concept="2OqwBi" id="a7" role="2Oq$k0">
-              <node concept="2OqwBi" id="a9" role="2Oq$k0">
-                <node concept="37vLTw" id="ab" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9I" resolve="ctx" />
+          <node concept="2OqwBi" id="aE" role="3clFbw">
+            <node concept="2OqwBi" id="aN" role="2Oq$k0">
+              <node concept="2OqwBi" id="aP" role="2Oq$k0">
+                <node concept="37vLTw" id="aR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="aq" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="ac" role="2OqNvi">
+                <node concept="liA8E" id="aS" role="2OqNvi">
                   <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                 </node>
               </node>
-              <node concept="1mfA1w" id="aa" role="2OqNvi" />
+              <node concept="1mfA1w" id="aQ" role="2OqNvi" />
             </node>
-            <node concept="1mIQ4w" id="a8" role="2OqNvi">
-              <node concept="chp4Y" id="ad" role="cj9EA">
+            <node concept="1mIQ4w" id="aO" role="2OqNvi">
+              <node concept="chp4Y" id="aT" role="cj9EA">
                 <ref role="cht4Q" to="igrf:4pwlIfuSOLk" resolve="JsonElement" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="9N" role="3cqZAp" />
-        <node concept="3clFbJ" id="9O" role="3cqZAp">
-          <node concept="3clFbS" id="ae" role="3clFbx">
-            <node concept="3clFbF" id="ah" role="3cqZAp">
-              <node concept="2OqwBi" id="aj" role="3clFbG">
-                <node concept="37vLTw" id="ak" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9S" resolve="tgs" />
+        <node concept="3clFbH" id="av" role="3cqZAp" />
+        <node concept="3clFbJ" id="aw" role="3cqZAp">
+          <node concept="3clFbS" id="aU" role="3clFbx">
+            <node concept="3clFbF" id="aX" role="3cqZAp">
+              <node concept="2OqwBi" id="aZ" role="3clFbG">
+                <node concept="37vLTw" id="b0" role="2Oq$k0">
+                  <ref role="3cqZAo" node="a$" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="al" role="2OqNvi">
+                <node concept="liA8E" id="b1" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.indent():jetbrains.mps.text.TextArea" resolve="indent" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="ai" role="3cqZAp">
-              <node concept="2OqwBi" id="am" role="3clFbG">
-                <node concept="37vLTw" id="an" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9S" resolve="tgs" />
+            <node concept="3clFbF" id="aY" role="3cqZAp">
+              <node concept="2OqwBi" id="b2" role="3clFbG">
+                <node concept="37vLTw" id="b3" role="2Oq$k0">
+                  <ref role="3cqZAo" node="a$" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="ao" role="2OqNvi">
+                <node concept="liA8E" id="b4" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                  <node concept="2OqwBi" id="ap" role="37wK5m">
-                    <node concept="2OqwBi" id="aq" role="2Oq$k0">
-                      <node concept="37vLTw" id="as" role="2Oq$k0">
-                        <ref role="3cqZAo" node="9I" resolve="ctx" />
+                  <node concept="2OqwBi" id="b5" role="37wK5m">
+                    <node concept="2OqwBi" id="b6" role="2Oq$k0">
+                      <node concept="37vLTw" id="b8" role="2Oq$k0">
+                        <ref role="3cqZAo" node="aq" resolve="ctx" />
                       </node>
-                      <node concept="liA8E" id="at" role="2OqNvi">
+                      <node concept="liA8E" id="b9" role="2OqNvi">
                         <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                       </node>
                     </node>
-                    <node concept="3TrcHB" id="ar" role="2OqNvi">
+                    <node concept="3TrcHB" id="b7" role="2OqNvi">
                       <ref role="3TsBF5" to="igrf:4pwlIfuRS$B" resolve="value" />
                     </node>
                   </node>
@@ -1931,74 +2026,74 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbC" id="af" role="3clFbw">
-            <node concept="10Nm6u" id="au" role="3uHU7w" />
-            <node concept="2OqwBi" id="av" role="3uHU7B">
-              <node concept="2OqwBi" id="aw" role="2Oq$k0">
-                <node concept="37vLTw" id="ay" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9I" resolve="ctx" />
+          <node concept="3clFbC" id="aV" role="3clFbw">
+            <node concept="10Nm6u" id="ba" role="3uHU7w" />
+            <node concept="2OqwBi" id="bb" role="3uHU7B">
+              <node concept="2OqwBi" id="bc" role="2Oq$k0">
+                <node concept="37vLTw" id="be" role="2Oq$k0">
+                  <ref role="3cqZAo" node="aq" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="az" role="2OqNvi">
+                <node concept="liA8E" id="bf" role="2OqNvi">
                   <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                 </node>
               </node>
-              <node concept="YCak7" id="ax" role="2OqNvi" />
+              <node concept="YCak7" id="bd" role="2OqNvi" />
             </node>
           </node>
-          <node concept="9aQIb" id="ag" role="9aQIa">
-            <node concept="3clFbS" id="a$" role="9aQI4">
-              <node concept="3clFbF" id="a_" role="3cqZAp">
-                <node concept="2OqwBi" id="aD" role="3clFbG">
-                  <node concept="37vLTw" id="aE" role="2Oq$k0">
-                    <ref role="3cqZAo" node="9S" resolve="tgs" />
+          <node concept="9aQIb" id="aW" role="9aQIa">
+            <node concept="3clFbS" id="bg" role="9aQI4">
+              <node concept="3clFbF" id="bh" role="3cqZAp">
+                <node concept="2OqwBi" id="bl" role="3clFbG">
+                  <node concept="37vLTw" id="bm" role="2Oq$k0">
+                    <ref role="3cqZAo" node="a$" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="aF" role="2OqNvi">
+                  <node concept="liA8E" id="bn" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.indent():jetbrains.mps.text.TextArea" resolve="indent" />
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="aA" role="3cqZAp">
-                <node concept="2OqwBi" id="aG" role="3clFbG">
-                  <node concept="37vLTw" id="aH" role="2Oq$k0">
-                    <ref role="3cqZAo" node="9S" resolve="tgs" />
+              <node concept="3clFbF" id="bi" role="3cqZAp">
+                <node concept="2OqwBi" id="bo" role="3clFbG">
+                  <node concept="37vLTw" id="bp" role="2Oq$k0">
+                    <ref role="3cqZAo" node="a$" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="aI" role="2OqNvi">
+                  <node concept="liA8E" id="bq" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                    <node concept="2OqwBi" id="aJ" role="37wK5m">
-                      <node concept="2OqwBi" id="aK" role="2Oq$k0">
-                        <node concept="37vLTw" id="aM" role="2Oq$k0">
-                          <ref role="3cqZAo" node="9I" resolve="ctx" />
+                    <node concept="2OqwBi" id="br" role="37wK5m">
+                      <node concept="2OqwBi" id="bs" role="2Oq$k0">
+                        <node concept="37vLTw" id="bu" role="2Oq$k0">
+                          <ref role="3cqZAo" node="aq" resolve="ctx" />
                         </node>
-                        <node concept="liA8E" id="aN" role="2OqNvi">
+                        <node concept="liA8E" id="bv" role="2OqNvi">
                           <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                         </node>
                       </node>
-                      <node concept="3TrcHB" id="aL" role="2OqNvi">
+                      <node concept="3TrcHB" id="bt" role="2OqNvi">
                         <ref role="3TsBF5" to="igrf:4pwlIfuRS$B" resolve="value" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="aB" role="3cqZAp">
-                <node concept="2OqwBi" id="aO" role="3clFbG">
-                  <node concept="37vLTw" id="aP" role="2Oq$k0">
-                    <ref role="3cqZAo" node="9S" resolve="tgs" />
+              <node concept="3clFbF" id="bj" role="3cqZAp">
+                <node concept="2OqwBi" id="bw" role="3clFbG">
+                  <node concept="37vLTw" id="bx" role="2Oq$k0">
+                    <ref role="3cqZAo" node="a$" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="aQ" role="2OqNvi">
+                  <node concept="liA8E" id="by" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                    <node concept="Xl_RD" id="aR" role="37wK5m">
+                    <node concept="Xl_RD" id="bz" role="37wK5m">
                       <property role="Xl_RC" value="," />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="aC" role="3cqZAp">
-                <node concept="2OqwBi" id="aS" role="3clFbG">
-                  <node concept="37vLTw" id="aT" role="2Oq$k0">
-                    <ref role="3cqZAo" node="9S" resolve="tgs" />
+              <node concept="3clFbF" id="bk" role="3cqZAp">
+                <node concept="2OqwBi" id="b$" role="3clFbG">
+                  <node concept="37vLTw" id="b_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="a$" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="aU" role="2OqNvi">
+                  <node concept="liA8E" id="bA" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.newLine():jetbrains.mps.text.TextArea" resolve="newLine" />
                   </node>
                 </node>
@@ -2006,433 +2101,488 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="9P" role="3cqZAp" />
-        <node concept="3clFbJ" id="9Q" role="3cqZAp">
-          <node concept="3clFbS" id="aV" role="3clFbx">
-            <node concept="3clFbF" id="aX" role="3cqZAp">
-              <node concept="2OqwBi" id="aZ" role="3clFbG">
-                <node concept="37vLTw" id="b0" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9S" resolve="tgs" />
+        <node concept="3clFbH" id="ax" role="3cqZAp" />
+        <node concept="3clFbJ" id="ay" role="3cqZAp">
+          <node concept="3clFbS" id="bB" role="3clFbx">
+            <node concept="3clFbF" id="bD" role="3cqZAp">
+              <node concept="2OqwBi" id="bF" role="3clFbG">
+                <node concept="37vLTw" id="bG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="a$" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="b1" role="2OqNvi">
+                <node concept="liA8E" id="bH" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.increaseIndent():jetbrains.mps.text.TextArea" resolve="increaseIndent" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="aY" role="3cqZAp">
-              <node concept="2OqwBi" id="b2" role="3clFbG">
-                <node concept="37vLTw" id="b3" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9S" resolve="tgs" />
+            <node concept="3clFbF" id="bE" role="3cqZAp">
+              <node concept="2OqwBi" id="bI" role="3clFbG">
+                <node concept="37vLTw" id="bJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="a$" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="b4" role="2OqNvi">
+                <node concept="liA8E" id="bK" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.increaseIndent():jetbrains.mps.text.TextArea" resolve="increaseIndent" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="aW" role="3clFbw">
-            <node concept="2OqwBi" id="b5" role="2Oq$k0">
-              <node concept="2OqwBi" id="b7" role="2Oq$k0">
-                <node concept="37vLTw" id="b9" role="2Oq$k0">
-                  <ref role="3cqZAo" node="9I" resolve="ctx" />
+          <node concept="2OqwBi" id="bC" role="3clFbw">
+            <node concept="2OqwBi" id="bL" role="2Oq$k0">
+              <node concept="2OqwBi" id="bN" role="2Oq$k0">
+                <node concept="37vLTw" id="bP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="aq" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="ba" role="2OqNvi">
+                <node concept="liA8E" id="bQ" role="2OqNvi">
                   <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                 </node>
               </node>
-              <node concept="1mfA1w" id="b8" role="2OqNvi" />
+              <node concept="1mfA1w" id="bO" role="2OqNvi" />
             </node>
-            <node concept="1mIQ4w" id="b6" role="2OqNvi">
-              <node concept="chp4Y" id="bb" role="cj9EA">
+            <node concept="1mIQ4w" id="bM" role="2OqNvi">
+              <node concept="chp4Y" id="bR" role="cj9EA">
                 <ref role="cht4Q" to="igrf:4pwlIfuSOLk" resolve="JsonElement" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="9R" role="3cqZAp" />
+        <node concept="3clFbH" id="az" role="3cqZAp" />
       </node>
-      <node concept="37vLTG" id="9I" role="3clF46">
+      <node concept="37vLTG" id="aq" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="bc" role="1tU5fm">
+        <node concept="3uibUv" id="bS" role="1tU5fm">
           <ref role="3uigEE" to="yfwt:~TextGenContext" resolve="TextGenContext" />
         </node>
       </node>
-      <node concept="2AHcQZ" id="9J" role="2AJF6D">
+      <node concept="2AHcQZ" id="ar" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
-  <node concept="312cEu" id="bd">
+  <node concept="312cEu" id="bT">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="JsonObject_TextGen" />
-    <node concept="3Tm1VV" id="be" role="1B3o_S" />
-    <node concept="3uibUv" id="bf" role="1zkMxy">
+    <node concept="3Tm1VV" id="bU" role="1B3o_S" />
+    <node concept="3uibUv" id="bV" role="1zkMxy">
       <ref role="3uigEE" to="yfwt:~TextGenDescriptorBase" resolve="TextGenDescriptorBase" />
     </node>
-    <node concept="3clFb_" id="bg" role="jymVt">
+    <node concept="3clFb_" id="bW" role="jymVt">
       <property role="TrG5h" value="generateText" />
-      <node concept="3cqZAl" id="bh" role="3clF45" />
-      <node concept="3Tm1VV" id="bi" role="1B3o_S" />
-      <node concept="3clFbS" id="bj" role="3clF47">
-        <node concept="3cpWs8" id="bm" role="3cqZAp">
-          <node concept="3cpWsn" id="bv" role="3cpWs9">
+      <node concept="3cqZAl" id="bX" role="3clF45" />
+      <node concept="3Tm1VV" id="bY" role="1B3o_S" />
+      <node concept="3clFbS" id="bZ" role="3clF47">
+        <node concept="3cpWs8" id="c2" role="3cqZAp">
+          <node concept="3cpWsn" id="ca" role="3cpWs9">
             <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="tgs" />
-            <node concept="3uibUv" id="bw" role="1tU5fm">
+            <node concept="3uibUv" id="cb" role="1tU5fm">
               <ref role="3uigEE" to="kpbf:~TextGenSupport" resolve="TextGenSupport" />
             </node>
-            <node concept="2ShNRf" id="bx" role="33vP2m">
-              <node concept="1pGfFk" id="by" role="2ShVmc">
+            <node concept="2ShNRf" id="cc" role="33vP2m">
+              <node concept="1pGfFk" id="cd" role="2ShVmc">
                 <ref role="37wK5l" to="kpbf:~TextGenSupport.&lt;init&gt;(jetbrains.mps.text.rt.TextGenContext)" resolve="TextGenSupport" />
-                <node concept="37vLTw" id="bz" role="37wK5m">
-                  <ref role="3cqZAo" node="bk" resolve="ctx" />
+                <node concept="37vLTw" id="ce" role="37wK5m">
+                  <ref role="3cqZAo" node="c0" resolve="ctx" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="bn" role="3cqZAp">
-          <node concept="2OqwBi" id="b$" role="3clFbG">
-            <node concept="37vLTw" id="b_" role="2Oq$k0">
-              <ref role="3cqZAo" node="bv" resolve="tgs" />
+        <node concept="3clFbF" id="c3" role="3cqZAp">
+          <node concept="2OqwBi" id="cf" role="3clFbG">
+            <node concept="37vLTw" id="cg" role="2Oq$k0">
+              <ref role="3cqZAo" node="ca" resolve="tgs" />
             </node>
-            <node concept="liA8E" id="bA" role="2OqNvi">
+            <node concept="liA8E" id="ch" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.indent():jetbrains.mps.text.TextArea" resolve="indent" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="bo" role="3cqZAp">
-          <node concept="2OqwBi" id="bB" role="3clFbG">
-            <node concept="37vLTw" id="bC" role="2Oq$k0">
-              <ref role="3cqZAo" node="bv" resolve="tgs" />
+        <node concept="3clFbF" id="c4" role="3cqZAp">
+          <node concept="2OqwBi" id="ci" role="3clFbG">
+            <node concept="37vLTw" id="cj" role="2Oq$k0">
+              <ref role="3cqZAo" node="ca" resolve="tgs" />
             </node>
-            <node concept="liA8E" id="bD" role="2OqNvi">
+            <node concept="liA8E" id="ck" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-              <node concept="Xl_RD" id="bE" role="37wK5m">
+              <node concept="Xl_RD" id="cl" role="37wK5m">
                 <property role="Xl_RC" value="{" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="bp" role="3cqZAp">
-          <node concept="2OqwBi" id="bF" role="3clFbG">
-            <node concept="37vLTw" id="bG" role="2Oq$k0">
-              <ref role="3cqZAo" node="bv" resolve="tgs" />
+        <node concept="3clFbF" id="c5" role="3cqZAp">
+          <node concept="2OqwBi" id="cm" role="3clFbG">
+            <node concept="37vLTw" id="cn" role="2Oq$k0">
+              <ref role="3cqZAo" node="ca" resolve="tgs" />
             </node>
-            <node concept="liA8E" id="bH" role="2OqNvi">
+            <node concept="liA8E" id="co" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.newLine():jetbrains.mps.text.TextArea" resolve="newLine" />
             </node>
           </node>
         </node>
-        <node concept="1DcWWT" id="bq" role="3cqZAp">
-          <node concept="3clFbS" id="bI" role="2LFqv$">
-            <node concept="3clFbF" id="bL" role="3cqZAp">
-              <node concept="2OqwBi" id="bM" role="3clFbG">
-                <node concept="37vLTw" id="bN" role="2Oq$k0">
-                  <ref role="3cqZAo" node="bv" resolve="tgs" />
+        <node concept="1DcWWT" id="c6" role="3cqZAp">
+          <node concept="3clFbS" id="cp" role="2LFqv$">
+            <node concept="3clFbF" id="cs" role="3cqZAp">
+              <node concept="2OqwBi" id="ct" role="3clFbG">
+                <node concept="37vLTw" id="cu" role="2Oq$k0">
+                  <ref role="3cqZAo" node="ca" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="bO" role="2OqNvi">
+                <node concept="liA8E" id="cv" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.appendNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="appendNode" />
-                  <node concept="37vLTw" id="bP" role="37wK5m">
-                    <ref role="3cqZAo" node="bJ" resolve="item" />
+                  <node concept="37vLTw" id="cw" role="37wK5m">
+                    <ref role="3cqZAo" node="cq" resolve="item" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3cpWsn" id="bJ" role="1Duv9x">
+          <node concept="3cpWsn" id="cq" role="1Duv9x">
             <property role="TrG5h" value="item" />
-            <node concept="3Tqbb2" id="bQ" role="1tU5fm" />
+            <node concept="3Tqbb2" id="cx" role="1tU5fm" />
           </node>
-          <node concept="2OqwBi" id="bK" role="1DdaDG">
-            <node concept="2OqwBi" id="bR" role="2Oq$k0">
-              <node concept="37vLTw" id="bT" role="2Oq$k0">
-                <ref role="3cqZAo" node="bk" resolve="ctx" />
+          <node concept="2OqwBi" id="cr" role="1DdaDG">
+            <node concept="2OqwBi" id="cy" role="2Oq$k0">
+              <node concept="37vLTw" id="c$" role="2Oq$k0">
+                <ref role="3cqZAo" node="c0" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="bU" role="2OqNvi">
+              <node concept="liA8E" id="c_" role="2OqNvi">
                 <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
               </node>
             </node>
-            <node concept="3Tsc0h" id="bS" role="2OqNvi">
+            <node concept="3Tsc0h" id="cz" role="2OqNvi">
               <ref role="3TtcxE" to="igrf:7DR9$wWYdu7" resolve="objects" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="br" role="3cqZAp">
-          <node concept="2OqwBi" id="bV" role="3clFbG">
-            <node concept="37vLTw" id="bW" role="2Oq$k0">
-              <ref role="3cqZAo" node="bv" resolve="tgs" />
+        <node concept="3clFbF" id="c7" role="3cqZAp">
+          <node concept="2OqwBi" id="cA" role="3clFbG">
+            <node concept="37vLTw" id="cB" role="2Oq$k0">
+              <ref role="3cqZAo" node="ca" resolve="tgs" />
             </node>
-            <node concept="liA8E" id="bX" role="2OqNvi">
+            <node concept="liA8E" id="cC" role="2OqNvi">
               <ref role="37wK5l" to="kpbf:~TextGenSupport.newLine():jetbrains.mps.text.TextArea" resolve="newLine" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="bs" role="3cqZAp">
-          <node concept="2OqwBi" id="bY" role="3clFbG">
-            <node concept="37vLTw" id="bZ" role="2Oq$k0">
-              <ref role="3cqZAo" node="bv" resolve="tgs" />
+        <node concept="3clFbH" id="c8" role="3cqZAp" />
+        <node concept="3clFbJ" id="c9" role="3cqZAp">
+          <node concept="3clFbS" id="cD" role="3clFbx">
+            <node concept="3clFbF" id="cG" role="3cqZAp">
+              <node concept="2OqwBi" id="cJ" role="3clFbG">
+                <node concept="37vLTw" id="cK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="ca" resolve="tgs" />
+                </node>
+                <node concept="liA8E" id="cL" role="2OqNvi">
+                  <ref role="37wK5l" to="kpbf:~TextGenSupport.indent():jetbrains.mps.text.TextArea" resolve="indent" />
+                </node>
+              </node>
             </node>
-            <node concept="liA8E" id="c0" role="2OqNvi">
-              <ref role="37wK5l" to="kpbf:~TextGenSupport.indent():jetbrains.mps.text.TextArea" resolve="indent" />
+            <node concept="3clFbF" id="cH" role="3cqZAp">
+              <node concept="2OqwBi" id="cM" role="3clFbG">
+                <node concept="37vLTw" id="cN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="ca" resolve="tgs" />
+                </node>
+                <node concept="liA8E" id="cO" role="2OqNvi">
+                  <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
+                  <node concept="Xl_RD" id="cP" role="37wK5m">
+                    <property role="Xl_RC" value="} ," />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="cI" role="3cqZAp">
+              <node concept="2OqwBi" id="cQ" role="3clFbG">
+                <node concept="37vLTw" id="cR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="ca" resolve="tgs" />
+                </node>
+                <node concept="liA8E" id="cS" role="2OqNvi">
+                  <ref role="37wK5l" to="kpbf:~TextGenSupport.newLine():jetbrains.mps.text.TextArea" resolve="newLine" />
+                </node>
+              </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="bt" role="3cqZAp">
-          <node concept="2OqwBi" id="c1" role="3clFbG">
-            <node concept="37vLTw" id="c2" role="2Oq$k0">
-              <ref role="3cqZAo" node="bv" resolve="tgs" />
+          <node concept="2OqwBi" id="cE" role="3clFbw">
+            <node concept="2OqwBi" id="cT" role="2Oq$k0">
+              <node concept="2OqwBi" id="cV" role="2Oq$k0">
+                <node concept="37vLTw" id="cX" role="2Oq$k0">
+                  <ref role="3cqZAo" node="c0" resolve="ctx" />
+                </node>
+                <node concept="liA8E" id="cY" role="2OqNvi">
+                  <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
+                </node>
+              </node>
+              <node concept="YCak7" id="cW" role="2OqNvi" />
             </node>
-            <node concept="liA8E" id="c3" role="2OqNvi">
-              <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-              <node concept="Xl_RD" id="c4" role="37wK5m">
-                <property role="Xl_RC" value="}" />
+            <node concept="3x8VRR" id="cU" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="cF" role="9aQIa">
+            <node concept="3clFbS" id="cZ" role="9aQI4">
+              <node concept="3clFbF" id="d0" role="3cqZAp">
+                <node concept="2OqwBi" id="d2" role="3clFbG">
+                  <node concept="37vLTw" id="d3" role="2Oq$k0">
+                    <ref role="3cqZAo" node="ca" resolve="tgs" />
+                  </node>
+                  <node concept="liA8E" id="d4" role="2OqNvi">
+                    <ref role="37wK5l" to="kpbf:~TextGenSupport.indent():jetbrains.mps.text.TextArea" resolve="indent" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="d1" role="3cqZAp">
+                <node concept="2OqwBi" id="d5" role="3clFbG">
+                  <node concept="37vLTw" id="d6" role="2Oq$k0">
+                    <ref role="3cqZAo" node="ca" resolve="tgs" />
+                  </node>
+                  <node concept="liA8E" id="d7" role="2OqNvi">
+                    <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
+                    <node concept="Xl_RD" id="d8" role="37wK5m">
+                      <property role="Xl_RC" value="}" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="bu" role="3cqZAp" />
       </node>
-      <node concept="37vLTG" id="bk" role="3clF46">
+      <node concept="37vLTG" id="c0" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="c5" role="1tU5fm">
+        <node concept="3uibUv" id="d9" role="1tU5fm">
           <ref role="3uigEE" to="yfwt:~TextGenContext" resolve="TextGenContext" />
         </node>
       </node>
-      <node concept="2AHcQZ" id="bl" role="2AJF6D">
+      <node concept="2AHcQZ" id="c1" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
-  <node concept="312cEu" id="c6">
+  <node concept="312cEu" id="da">
     <property role="1sVAO0" value="false" />
     <property role="TrG5h" value="JsonString_TextGen" />
-    <node concept="3Tm1VV" id="c7" role="1B3o_S" />
-    <node concept="3uibUv" id="c8" role="1zkMxy">
+    <node concept="3Tm1VV" id="db" role="1B3o_S" />
+    <node concept="3uibUv" id="dc" role="1zkMxy">
       <ref role="3uigEE" to="yfwt:~TextGenDescriptorBase" resolve="TextGenDescriptorBase" />
     </node>
-    <node concept="3clFb_" id="c9" role="jymVt">
+    <node concept="3clFb_" id="dd" role="jymVt">
       <property role="TrG5h" value="generateText" />
-      <node concept="3cqZAl" id="ca" role="3clF45" />
-      <node concept="3Tm1VV" id="cb" role="1B3o_S" />
-      <node concept="3clFbS" id="cc" role="3clF47">
-        <node concept="3cpWs8" id="cf" role="3cqZAp">
-          <node concept="3cpWsn" id="cm" role="3cpWs9">
+      <node concept="3cqZAl" id="de" role="3clF45" />
+      <node concept="3Tm1VV" id="df" role="1B3o_S" />
+      <node concept="3clFbS" id="dg" role="3clF47">
+        <node concept="3cpWs8" id="dj" role="3cqZAp">
+          <node concept="3cpWsn" id="dq" role="3cpWs9">
             <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="tgs" />
-            <node concept="3uibUv" id="cn" role="1tU5fm">
+            <node concept="3uibUv" id="dr" role="1tU5fm">
               <ref role="3uigEE" to="kpbf:~TextGenSupport" resolve="TextGenSupport" />
             </node>
-            <node concept="2ShNRf" id="co" role="33vP2m">
-              <node concept="1pGfFk" id="cp" role="2ShVmc">
+            <node concept="2ShNRf" id="ds" role="33vP2m">
+              <node concept="1pGfFk" id="dt" role="2ShVmc">
                 <ref role="37wK5l" to="kpbf:~TextGenSupport.&lt;init&gt;(jetbrains.mps.text.rt.TextGenContext)" resolve="TextGenSupport" />
-                <node concept="37vLTw" id="cq" role="37wK5m">
-                  <ref role="3cqZAo" node="cd" resolve="ctx" />
+                <node concept="37vLTw" id="du" role="37wK5m">
+                  <ref role="3cqZAo" node="dh" resolve="ctx" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="cg" role="3cqZAp">
-          <node concept="3clFbS" id="cr" role="3clFbx">
-            <node concept="3clFbF" id="ct" role="3cqZAp">
-              <node concept="2OqwBi" id="cv" role="3clFbG">
-                <node concept="37vLTw" id="cw" role="2Oq$k0">
-                  <ref role="3cqZAo" node="cm" resolve="tgs" />
+        <node concept="3clFbJ" id="dk" role="3cqZAp">
+          <node concept="3clFbS" id="dv" role="3clFbx">
+            <node concept="3clFbF" id="dx" role="3cqZAp">
+              <node concept="2OqwBi" id="dz" role="3clFbG">
+                <node concept="37vLTw" id="d$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="dq" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="cx" role="2OqNvi">
+                <node concept="liA8E" id="d_" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.decreaseIndent():jetbrains.mps.text.TextArea" resolve="decreaseIndent" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="cu" role="3cqZAp">
-              <node concept="2OqwBi" id="cy" role="3clFbG">
-                <node concept="37vLTw" id="cz" role="2Oq$k0">
-                  <ref role="3cqZAo" node="cm" resolve="tgs" />
+            <node concept="3clFbF" id="dy" role="3cqZAp">
+              <node concept="2OqwBi" id="dA" role="3clFbG">
+                <node concept="37vLTw" id="dB" role="2Oq$k0">
+                  <ref role="3cqZAo" node="dq" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="c$" role="2OqNvi">
+                <node concept="liA8E" id="dC" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.decreaseIndent():jetbrains.mps.text.TextArea" resolve="decreaseIndent" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="cs" role="3clFbw">
-            <node concept="2OqwBi" id="c_" role="2Oq$k0">
-              <node concept="2OqwBi" id="cB" role="2Oq$k0">
-                <node concept="37vLTw" id="cD" role="2Oq$k0">
-                  <ref role="3cqZAo" node="cd" resolve="ctx" />
+          <node concept="2OqwBi" id="dw" role="3clFbw">
+            <node concept="2OqwBi" id="dD" role="2Oq$k0">
+              <node concept="2OqwBi" id="dF" role="2Oq$k0">
+                <node concept="37vLTw" id="dH" role="2Oq$k0">
+                  <ref role="3cqZAo" node="dh" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="cE" role="2OqNvi">
+                <node concept="liA8E" id="dI" role="2OqNvi">
                   <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                 </node>
               </node>
-              <node concept="1mfA1w" id="cC" role="2OqNvi" />
+              <node concept="1mfA1w" id="dG" role="2OqNvi" />
             </node>
-            <node concept="1mIQ4w" id="cA" role="2OqNvi">
-              <node concept="chp4Y" id="cF" role="cj9EA">
+            <node concept="1mIQ4w" id="dE" role="2OqNvi">
+              <node concept="chp4Y" id="dJ" role="cj9EA">
                 <ref role="cht4Q" to="igrf:4pwlIfuSOLk" resolve="JsonElement" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="ch" role="3cqZAp">
-          <node concept="3clFbS" id="cG" role="3clFbx">
-            <node concept="3clFbF" id="cJ" role="3cqZAp">
-              <node concept="2OqwBi" id="cQ" role="3clFbG">
-                <node concept="37vLTw" id="cR" role="2Oq$k0">
-                  <ref role="3cqZAo" node="cm" resolve="tgs" />
+        <node concept="3clFbJ" id="dl" role="3cqZAp">
+          <node concept="3clFbS" id="dK" role="3clFbx">
+            <node concept="3clFbF" id="dN" role="3cqZAp">
+              <node concept="2OqwBi" id="dU" role="3clFbG">
+                <node concept="37vLTw" id="dV" role="2Oq$k0">
+                  <ref role="3cqZAo" node="dq" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="cS" role="2OqNvi">
+                <node concept="liA8E" id="dW" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.indent():jetbrains.mps.text.TextArea" resolve="indent" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="cK" role="3cqZAp">
-              <node concept="2OqwBi" id="cT" role="3clFbG">
-                <node concept="37vLTw" id="cU" role="2Oq$k0">
-                  <ref role="3cqZAo" node="cm" resolve="tgs" />
+            <node concept="3clFbF" id="dO" role="3cqZAp">
+              <node concept="2OqwBi" id="dX" role="3clFbG">
+                <node concept="37vLTw" id="dY" role="2Oq$k0">
+                  <ref role="3cqZAo" node="dq" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="cV" role="2OqNvi">
+                <node concept="liA8E" id="dZ" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                  <node concept="Xl_RD" id="cW" role="37wK5m">
+                  <node concept="Xl_RD" id="e0" role="37wK5m">
                     <property role="Xl_RC" value="&quot;" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="cL" role="3cqZAp">
-              <node concept="2OqwBi" id="cX" role="3clFbG">
-                <node concept="37vLTw" id="cY" role="2Oq$k0">
-                  <ref role="3cqZAo" node="cm" resolve="tgs" />
+            <node concept="3clFbF" id="dP" role="3cqZAp">
+              <node concept="2OqwBi" id="e1" role="3clFbG">
+                <node concept="37vLTw" id="e2" role="2Oq$k0">
+                  <ref role="3cqZAo" node="dq" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="cZ" role="2OqNvi">
+                <node concept="liA8E" id="e3" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                  <node concept="2OqwBi" id="d0" role="37wK5m">
-                    <node concept="2OqwBi" id="d1" role="2Oq$k0">
-                      <node concept="37vLTw" id="d3" role="2Oq$k0">
-                        <ref role="3cqZAo" node="cd" resolve="ctx" />
+                  <node concept="2OqwBi" id="e4" role="37wK5m">
+                    <node concept="2OqwBi" id="e5" role="2Oq$k0">
+                      <node concept="37vLTw" id="e7" role="2Oq$k0">
+                        <ref role="3cqZAo" node="dh" resolve="ctx" />
                       </node>
-                      <node concept="liA8E" id="d4" role="2OqNvi">
+                      <node concept="liA8E" id="e8" role="2OqNvi">
                         <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                       </node>
                     </node>
-                    <node concept="3TrcHB" id="d2" role="2OqNvi">
+                    <node concept="3TrcHB" id="e6" role="2OqNvi">
                       <ref role="3TsBF5" to="igrf:4pwlIfuRS$w" resolve="value" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="cM" role="3cqZAp">
-              <node concept="2OqwBi" id="d5" role="3clFbG">
-                <node concept="37vLTw" id="d6" role="2Oq$k0">
-                  <ref role="3cqZAo" node="cm" resolve="tgs" />
+            <node concept="3clFbF" id="dQ" role="3cqZAp">
+              <node concept="2OqwBi" id="e9" role="3clFbG">
+                <node concept="37vLTw" id="ea" role="2Oq$k0">
+                  <ref role="3cqZAo" node="dq" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="d7" role="2OqNvi">
+                <node concept="liA8E" id="eb" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                  <node concept="Xl_RD" id="d8" role="37wK5m">
+                  <node concept="Xl_RD" id="ec" role="37wK5m">
                     <property role="Xl_RC" value="&quot;" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="cN" role="3cqZAp">
-              <node concept="2OqwBi" id="d9" role="3clFbG">
-                <node concept="37vLTw" id="da" role="2Oq$k0">
-                  <ref role="3cqZAo" node="cm" resolve="tgs" />
+            <node concept="3clFbF" id="dR" role="3cqZAp">
+              <node concept="2OqwBi" id="ed" role="3clFbG">
+                <node concept="37vLTw" id="ee" role="2Oq$k0">
+                  <ref role="3cqZAo" node="dq" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="db" role="2OqNvi">
+                <node concept="liA8E" id="ef" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                  <node concept="Xl_RD" id="dc" role="37wK5m">
+                  <node concept="Xl_RD" id="eg" role="37wK5m">
                     <property role="Xl_RC" value="," />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="cO" role="3cqZAp">
-              <node concept="2OqwBi" id="dd" role="3clFbG">
-                <node concept="37vLTw" id="de" role="2Oq$k0">
-                  <ref role="3cqZAo" node="cm" resolve="tgs" />
+            <node concept="3clFbF" id="dS" role="3cqZAp">
+              <node concept="2OqwBi" id="eh" role="3clFbG">
+                <node concept="37vLTw" id="ei" role="2Oq$k0">
+                  <ref role="3cqZAo" node="dq" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="df" role="2OqNvi">
+                <node concept="liA8E" id="ej" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.newLine():jetbrains.mps.text.TextArea" resolve="newLine" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="cP" role="3cqZAp" />
+            <node concept="3clFbH" id="dT" role="3cqZAp" />
           </node>
-          <node concept="3y3z36" id="cH" role="3clFbw">
-            <node concept="10Nm6u" id="dg" role="3uHU7w" />
-            <node concept="2OqwBi" id="dh" role="3uHU7B">
-              <node concept="2OqwBi" id="di" role="2Oq$k0">
-                <node concept="37vLTw" id="dk" role="2Oq$k0">
-                  <ref role="3cqZAo" node="cd" resolve="ctx" />
+          <node concept="3y3z36" id="dL" role="3clFbw">
+            <node concept="10Nm6u" id="ek" role="3uHU7w" />
+            <node concept="2OqwBi" id="el" role="3uHU7B">
+              <node concept="2OqwBi" id="em" role="2Oq$k0">
+                <node concept="37vLTw" id="eo" role="2Oq$k0">
+                  <ref role="3cqZAo" node="dh" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="dl" role="2OqNvi">
+                <node concept="liA8E" id="ep" role="2OqNvi">
                   <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                 </node>
               </node>
-              <node concept="YCak7" id="dj" role="2OqNvi" />
+              <node concept="YCak7" id="en" role="2OqNvi" />
             </node>
           </node>
-          <node concept="9aQIb" id="cI" role="9aQIa">
-            <node concept="3clFbS" id="dm" role="9aQI4">
-              <node concept="3clFbF" id="dn" role="3cqZAp">
-                <node concept="2OqwBi" id="dr" role="3clFbG">
-                  <node concept="37vLTw" id="ds" role="2Oq$k0">
-                    <ref role="3cqZAo" node="cm" resolve="tgs" />
+          <node concept="9aQIb" id="dM" role="9aQIa">
+            <node concept="3clFbS" id="eq" role="9aQI4">
+              <node concept="3clFbF" id="er" role="3cqZAp">
+                <node concept="2OqwBi" id="ev" role="3clFbG">
+                  <node concept="37vLTw" id="ew" role="2Oq$k0">
+                    <ref role="3cqZAo" node="dq" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="dt" role="2OqNvi">
+                  <node concept="liA8E" id="ex" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.indent():jetbrains.mps.text.TextArea" resolve="indent" />
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="do" role="3cqZAp">
-                <node concept="2OqwBi" id="du" role="3clFbG">
-                  <node concept="37vLTw" id="dv" role="2Oq$k0">
-                    <ref role="3cqZAo" node="cm" resolve="tgs" />
+              <node concept="3clFbF" id="es" role="3cqZAp">
+                <node concept="2OqwBi" id="ey" role="3clFbG">
+                  <node concept="37vLTw" id="ez" role="2Oq$k0">
+                    <ref role="3cqZAo" node="dq" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="dw" role="2OqNvi">
+                  <node concept="liA8E" id="e$" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                    <node concept="Xl_RD" id="dx" role="37wK5m">
+                    <node concept="Xl_RD" id="e_" role="37wK5m">
                       <property role="Xl_RC" value="&quot;" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="dp" role="3cqZAp">
-                <node concept="2OqwBi" id="dy" role="3clFbG">
-                  <node concept="37vLTw" id="dz" role="2Oq$k0">
-                    <ref role="3cqZAo" node="cm" resolve="tgs" />
+              <node concept="3clFbF" id="et" role="3cqZAp">
+                <node concept="2OqwBi" id="eA" role="3clFbG">
+                  <node concept="37vLTw" id="eB" role="2Oq$k0">
+                    <ref role="3cqZAo" node="dq" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="d$" role="2OqNvi">
+                  <node concept="liA8E" id="eC" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                    <node concept="2OqwBi" id="d_" role="37wK5m">
-                      <node concept="2OqwBi" id="dA" role="2Oq$k0">
-                        <node concept="37vLTw" id="dC" role="2Oq$k0">
-                          <ref role="3cqZAo" node="cd" resolve="ctx" />
+                    <node concept="2OqwBi" id="eD" role="37wK5m">
+                      <node concept="2OqwBi" id="eE" role="2Oq$k0">
+                        <node concept="37vLTw" id="eG" role="2Oq$k0">
+                          <ref role="3cqZAo" node="dh" resolve="ctx" />
                         </node>
-                        <node concept="liA8E" id="dD" role="2OqNvi">
+                        <node concept="liA8E" id="eH" role="2OqNvi">
                           <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                         </node>
                       </node>
-                      <node concept="3TrcHB" id="dB" role="2OqNvi">
+                      <node concept="3TrcHB" id="eF" role="2OqNvi">
                         <ref role="3TsBF5" to="igrf:4pwlIfuRS$w" resolve="value" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="dq" role="3cqZAp">
-                <node concept="2OqwBi" id="dE" role="3clFbG">
-                  <node concept="37vLTw" id="dF" role="2Oq$k0">
-                    <ref role="3cqZAo" node="cm" resolve="tgs" />
+              <node concept="3clFbF" id="eu" role="3cqZAp">
+                <node concept="2OqwBi" id="eI" role="3clFbG">
+                  <node concept="37vLTw" id="eJ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="dq" resolve="tgs" />
                   </node>
-                  <node concept="liA8E" id="dG" role="2OqNvi">
+                  <node concept="liA8E" id="eK" role="2OqNvi">
                     <ref role="37wK5l" to="kpbf:~TextGenSupport.append(java.lang.CharSequence):jetbrains.mps.text.TextArea" resolve="append" />
-                    <node concept="Xl_RD" id="dH" role="37wK5m">
+                    <node concept="Xl_RD" id="eL" role="37wK5m">
                       <property role="Xl_RC" value="&quot;" />
                     </node>
                   </node>
@@ -2441,451 +2591,451 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="ci" role="3cqZAp" />
-        <node concept="3clFbJ" id="cj" role="3cqZAp">
-          <node concept="3clFbS" id="dI" role="3clFbx">
-            <node concept="3clFbF" id="dK" role="3cqZAp">
-              <node concept="2OqwBi" id="dM" role="3clFbG">
-                <node concept="37vLTw" id="dN" role="2Oq$k0">
-                  <ref role="3cqZAo" node="cm" resolve="tgs" />
+        <node concept="3clFbH" id="dm" role="3cqZAp" />
+        <node concept="3clFbJ" id="dn" role="3cqZAp">
+          <node concept="3clFbS" id="eM" role="3clFbx">
+            <node concept="3clFbF" id="eO" role="3cqZAp">
+              <node concept="2OqwBi" id="eQ" role="3clFbG">
+                <node concept="37vLTw" id="eR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="dq" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="dO" role="2OqNvi">
+                <node concept="liA8E" id="eS" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.increaseIndent():jetbrains.mps.text.TextArea" resolve="increaseIndent" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="dL" role="3cqZAp">
-              <node concept="2OqwBi" id="dP" role="3clFbG">
-                <node concept="37vLTw" id="dQ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="cm" resolve="tgs" />
+            <node concept="3clFbF" id="eP" role="3cqZAp">
+              <node concept="2OqwBi" id="eT" role="3clFbG">
+                <node concept="37vLTw" id="eU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="dq" resolve="tgs" />
                 </node>
-                <node concept="liA8E" id="dR" role="2OqNvi">
+                <node concept="liA8E" id="eV" role="2OqNvi">
                   <ref role="37wK5l" to="kpbf:~TextGenSupport.increaseIndent():jetbrains.mps.text.TextArea" resolve="increaseIndent" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="dJ" role="3clFbw">
-            <node concept="2OqwBi" id="dS" role="2Oq$k0">
-              <node concept="2OqwBi" id="dU" role="2Oq$k0">
-                <node concept="37vLTw" id="dW" role="2Oq$k0">
-                  <ref role="3cqZAo" node="cd" resolve="ctx" />
+          <node concept="2OqwBi" id="eN" role="3clFbw">
+            <node concept="2OqwBi" id="eW" role="2Oq$k0">
+              <node concept="2OqwBi" id="eY" role="2Oq$k0">
+                <node concept="37vLTw" id="f0" role="2Oq$k0">
+                  <ref role="3cqZAo" node="dh" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="dX" role="2OqNvi">
+                <node concept="liA8E" id="f1" role="2OqNvi">
                   <ref role="37wK5l" to="yfwt:~TextGenContext.getPrimaryInput():org.jetbrains.mps.openapi.model.SNode" resolve="getPrimaryInput" />
                 </node>
               </node>
-              <node concept="1mfA1w" id="dV" role="2OqNvi" />
+              <node concept="1mfA1w" id="eZ" role="2OqNvi" />
             </node>
-            <node concept="1mIQ4w" id="dT" role="2OqNvi">
-              <node concept="chp4Y" id="dY" role="cj9EA">
+            <node concept="1mIQ4w" id="eX" role="2OqNvi">
+              <node concept="chp4Y" id="f2" role="cj9EA">
                 <ref role="cht4Q" to="igrf:4pwlIfuSOLk" resolve="JsonElement" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="ck" role="3cqZAp" />
-        <node concept="3clFbH" id="cl" role="3cqZAp" />
+        <node concept="3clFbH" id="do" role="3cqZAp" />
+        <node concept="3clFbH" id="dp" role="3cqZAp" />
       </node>
-      <node concept="37vLTG" id="cd" role="3clF46">
+      <node concept="37vLTG" id="dh" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="dZ" role="1tU5fm">
+        <node concept="3uibUv" id="f3" role="1tU5fm">
           <ref role="3uigEE" to="yfwt:~TextGenContext" resolve="TextGenContext" />
         </node>
       </node>
-      <node concept="2AHcQZ" id="ce" role="2AJF6D">
+      <node concept="2AHcQZ" id="di" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
-  <node concept="312cEu" id="e0">
+  <node concept="312cEu" id="f4">
     <property role="TrG5h" value="TextGenAspectDescriptor" />
-    <node concept="312cEg" id="e1" role="jymVt">
+    <node concept="312cEg" id="f5" role="jymVt">
       <property role="TrG5h" value="myIndex" />
       <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="ec" role="1B3o_S" />
-      <node concept="2eloPW" id="ed" role="1tU5fm">
+      <node concept="3Tm6S6" id="fg" role="1B3o_S" />
+      <node concept="2eloPW" id="fh" role="1tU5fm">
         <property role="2ely0U" value="jetbrains.mps.json.structure.LanguageConceptSwitch" />
         <ref role="3uigEE" to="tpcf:1OW7rNmnulT" resolve="LanguageConceptSwitch" />
       </node>
-      <node concept="2ShNRf" id="ee" role="33vP2m">
-        <node concept="xCZzO" id="ef" role="2ShVmc">
+      <node concept="2ShNRf" id="fi" role="33vP2m">
+        <node concept="xCZzO" id="fj" role="2ShVmc">
           <property role="xCZzQ" value="jetbrains.mps.json.structure.LanguageConceptSwitch" />
-          <node concept="3uibUv" id="eg" role="xCZzL">
+          <node concept="3uibUv" id="fk" role="xCZzL">
             <ref role="3uigEE" to="tpcf:1OW7rNmnulT" resolve="LanguageConceptSwitch" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="e2" role="jymVt" />
-    <node concept="3clFbW" id="e3" role="jymVt">
-      <node concept="3cqZAl" id="eh" role="3clF45" />
-      <node concept="3clFbS" id="ei" role="3clF47" />
-      <node concept="3Tm1VV" id="ej" role="1B3o_S" />
+    <node concept="2tJIrI" id="f6" role="jymVt" />
+    <node concept="3clFbW" id="f7" role="jymVt">
+      <node concept="3cqZAl" id="fl" role="3clF45" />
+      <node concept="3clFbS" id="fm" role="3clF47" />
+      <node concept="3Tm1VV" id="fn" role="1B3o_S" />
     </node>
-    <node concept="2tJIrI" id="e4" role="jymVt" />
-    <node concept="3Tm1VV" id="e5" role="1B3o_S" />
-    <node concept="3uibUv" id="e6" role="1zkMxy">
+    <node concept="2tJIrI" id="f8" role="jymVt" />
+    <node concept="3Tm1VV" id="f9" role="1B3o_S" />
+    <node concept="3uibUv" id="fa" role="1zkMxy">
       <ref role="3uigEE" to="yfwt:~TextGenAspectBase" resolve="TextGenAspectBase" />
     </node>
-    <node concept="3clFb_" id="e7" role="jymVt">
+    <node concept="3clFb_" id="fb" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getDescriptor" />
       <property role="DiZV1" value="false" />
       <property role="IEkAT" value="false" />
-      <node concept="3Tm1VV" id="ek" role="1B3o_S" />
-      <node concept="3uibUv" id="el" role="3clF45">
+      <node concept="3Tm1VV" id="fo" role="1B3o_S" />
+      <node concept="3uibUv" id="fp" role="3clF45">
         <ref role="3uigEE" to="yfwt:~TextGenDescriptor" resolve="TextGenDescriptor" />
       </node>
-      <node concept="37vLTG" id="em" role="3clF46">
+      <node concept="37vLTG" id="fq" role="3clF46">
         <property role="TrG5h" value="concept" />
-        <node concept="3bZ5Sz" id="eq" role="1tU5fm" />
-        <node concept="2AHcQZ" id="er" role="2AJF6D">
+        <node concept="3bZ5Sz" id="fu" role="1tU5fm" />
+        <node concept="2AHcQZ" id="fv" role="2AJF6D">
           <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
         </node>
       </node>
-      <node concept="2AHcQZ" id="en" role="2AJF6D">
+      <node concept="2AHcQZ" id="fr" role="2AJF6D">
         <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
       </node>
-      <node concept="3clFbS" id="eo" role="3clF47">
-        <node concept="3KaCP$" id="es" role="3cqZAp">
-          <node concept="2OqwBi" id="eu" role="3KbGdf">
-            <node concept="37vLTw" id="eC" role="2Oq$k0">
-              <ref role="3cqZAo" node="e1" resolve="myIndex" />
+      <node concept="3clFbS" id="fs" role="3clF47">
+        <node concept="3KaCP$" id="fw" role="3cqZAp">
+          <node concept="2OqwBi" id="fy" role="3KbGdf">
+            <node concept="37vLTw" id="fG" role="2Oq$k0">
+              <ref role="3cqZAo" node="f5" resolve="myIndex" />
             </node>
-            <node concept="liA8E" id="eD" role="2OqNvi">
+            <node concept="liA8E" id="fH" role="2OqNvi">
               <ref role="37wK5l" to="tpcf:1OW7rNmnuDr" resolve="index" />
-              <node concept="37vLTw" id="eE" role="37wK5m">
-                <ref role="3cqZAo" node="em" resolve="concept" />
+              <node concept="37vLTw" id="fI" role="37wK5m">
+                <ref role="3cqZAo" node="fq" resolve="concept" />
               </node>
             </node>
           </node>
-          <node concept="3KbdKl" id="ev" role="3KbHQx">
-            <node concept="1n$iZg" id="eF" role="3Kbmr1">
+          <node concept="3KbdKl" id="fz" role="3KbHQx">
+            <node concept="1n$iZg" id="fJ" role="3Kbmr1">
               <property role="1n_iUB" value="JsonArray" />
               <property role="1n_ezw" value="jetbrains.mps.json.structure.LanguageConceptSwitch" />
             </node>
-            <node concept="3clFbS" id="eG" role="3Kbo56">
-              <node concept="3cpWs6" id="eH" role="3cqZAp">
-                <node concept="2ShNRf" id="eI" role="3cqZAk">
-                  <node concept="HV5vD" id="eJ" role="2ShVmc">
+            <node concept="3clFbS" id="fK" role="3Kbo56">
+              <node concept="3cpWs6" id="fL" role="3cqZAp">
+                <node concept="2ShNRf" id="fM" role="3cqZAk">
+                  <node concept="HV5vD" id="fN" role="2ShVmc">
                     <ref role="HV5vE" node="19" resolve="JsonArray_TextGen" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3KbdKl" id="ew" role="3KbHQx">
-            <node concept="1n$iZg" id="eK" role="3Kbmr1">
+          <node concept="3KbdKl" id="f$" role="3KbHQx">
+            <node concept="1n$iZg" id="fO" role="3Kbmr1">
               <property role="1n_iUB" value="JsonBaseObject" />
               <property role="1n_ezw" value="jetbrains.mps.json.structure.LanguageConceptSwitch" />
             </node>
-            <node concept="3clFbS" id="eL" role="3Kbo56">
-              <node concept="3cpWs6" id="eM" role="3cqZAp">
-                <node concept="2ShNRf" id="eN" role="3cqZAk">
-                  <node concept="HV5vD" id="eO" role="2ShVmc">
+            <node concept="3clFbS" id="fP" role="3Kbo56">
+              <node concept="3cpWs6" id="fQ" role="3cqZAp">
+                <node concept="2ShNRf" id="fR" role="3cqZAk">
+                  <node concept="HV5vD" id="fS" role="2ShVmc">
                     <ref role="HV5vE" node="2i" resolve="JsonBaseObject_TextGen" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3KbdKl" id="ex" role="3KbHQx">
-            <node concept="1n$iZg" id="eP" role="3Kbmr1">
+          <node concept="3KbdKl" id="f_" role="3KbHQx">
+            <node concept="1n$iZg" id="fT" role="3Kbmr1">
               <property role="1n_iUB" value="JsonBool" />
               <property role="1n_ezw" value="jetbrains.mps.json.structure.LanguageConceptSwitch" />
             </node>
-            <node concept="3clFbS" id="eQ" role="3Kbo56">
-              <node concept="3cpWs6" id="eR" role="3cqZAp">
-                <node concept="2ShNRf" id="eS" role="3cqZAk">
-                  <node concept="HV5vD" id="eT" role="2ShVmc">
+            <node concept="3clFbS" id="fU" role="3Kbo56">
+              <node concept="3cpWs6" id="fV" role="3cqZAp">
+                <node concept="2ShNRf" id="fW" role="3cqZAk">
+                  <node concept="HV5vD" id="fX" role="2ShVmc">
                     <ref role="HV5vE" node="3r" resolve="JsonBool_TextGen" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3KbdKl" id="ey" role="3KbHQx">
-            <node concept="1n$iZg" id="eU" role="3Kbmr1">
+          <node concept="3KbdKl" id="fA" role="3KbHQx">
+            <node concept="1n$iZg" id="fY" role="3Kbmr1">
               <property role="1n_iUB" value="JsonElement" />
               <property role="1n_ezw" value="jetbrains.mps.json.structure.LanguageConceptSwitch" />
             </node>
-            <node concept="3clFbS" id="eV" role="3Kbo56">
-              <node concept="3cpWs6" id="eW" role="3cqZAp">
-                <node concept="2ShNRf" id="eX" role="3cqZAk">
-                  <node concept="HV5vD" id="eY" role="2ShVmc">
+            <node concept="3clFbS" id="fZ" role="3Kbo56">
+              <node concept="3cpWs6" id="g0" role="3cqZAp">
+                <node concept="2ShNRf" id="g1" role="3cqZAk">
+                  <node concept="HV5vD" id="g2" role="2ShVmc">
                     <ref role="HV5vE" node="5v" resolve="JsonElement_TextGen" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3KbdKl" id="ez" role="3KbHQx">
-            <node concept="1n$iZg" id="eZ" role="3Kbmr1">
+          <node concept="3KbdKl" id="fB" role="3KbHQx">
+            <node concept="1n$iZg" id="g3" role="3Kbmr1">
               <property role="1n_iUB" value="JsonFile" />
               <property role="1n_ezw" value="jetbrains.mps.json.structure.LanguageConceptSwitch" />
             </node>
-            <node concept="3clFbS" id="f0" role="3Kbo56">
-              <node concept="3cpWs6" id="f1" role="3cqZAp">
-                <node concept="2ShNRf" id="f2" role="3cqZAk">
-                  <node concept="HV5vD" id="f3" role="2ShVmc">
-                    <ref role="HV5vE" node="7t" resolve="JsonFile_TextGen" />
+            <node concept="3clFbS" id="g4" role="3Kbo56">
+              <node concept="3cpWs6" id="g5" role="3cqZAp">
+                <node concept="2ShNRf" id="g6" role="3cqZAk">
+                  <node concept="HV5vD" id="g7" role="2ShVmc">
+                    <ref role="HV5vE" node="89" resolve="JsonFile_TextGen" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3KbdKl" id="e$" role="3KbHQx">
-            <node concept="1n$iZg" id="f4" role="3Kbmr1">
+          <node concept="3KbdKl" id="fC" role="3KbHQx">
+            <node concept="1n$iZg" id="g8" role="3Kbmr1">
               <property role="1n_iUB" value="JsonNull" />
               <property role="1n_ezw" value="jetbrains.mps.json.structure.LanguageConceptSwitch" />
             </node>
-            <node concept="3clFbS" id="f5" role="3Kbo56">
-              <node concept="3cpWs6" id="f6" role="3cqZAp">
-                <node concept="2ShNRf" id="f7" role="3cqZAk">
-                  <node concept="HV5vD" id="f8" role="2ShVmc">
-                    <ref role="HV5vE" node="8f" resolve="JsonNull_TextGen" />
+            <node concept="3clFbS" id="g9" role="3Kbo56">
+              <node concept="3cpWs6" id="ga" role="3cqZAp">
+                <node concept="2ShNRf" id="gb" role="3cqZAk">
+                  <node concept="HV5vD" id="gc" role="2ShVmc">
+                    <ref role="HV5vE" node="8V" resolve="JsonNull_TextGen" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3KbdKl" id="e_" role="3KbHQx">
-            <node concept="1n$iZg" id="f9" role="3Kbmr1">
+          <node concept="3KbdKl" id="fD" role="3KbHQx">
+            <node concept="1n$iZg" id="gd" role="3Kbmr1">
               <property role="1n_iUB" value="JsonNumber" />
               <property role="1n_ezw" value="jetbrains.mps.json.structure.LanguageConceptSwitch" />
             </node>
-            <node concept="3clFbS" id="fa" role="3Kbo56">
-              <node concept="3cpWs6" id="fb" role="3cqZAp">
-                <node concept="2ShNRf" id="fc" role="3cqZAk">
-                  <node concept="HV5vD" id="fd" role="2ShVmc">
-                    <ref role="HV5vE" node="9B" resolve="JsonNumber_TextGen" />
+            <node concept="3clFbS" id="ge" role="3Kbo56">
+              <node concept="3cpWs6" id="gf" role="3cqZAp">
+                <node concept="2ShNRf" id="gg" role="3cqZAk">
+                  <node concept="HV5vD" id="gh" role="2ShVmc">
+                    <ref role="HV5vE" node="aj" resolve="JsonNumber_TextGen" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3KbdKl" id="eA" role="3KbHQx">
-            <node concept="1n$iZg" id="fe" role="3Kbmr1">
+          <node concept="3KbdKl" id="fE" role="3KbHQx">
+            <node concept="1n$iZg" id="gi" role="3Kbmr1">
               <property role="1n_iUB" value="JsonObject" />
               <property role="1n_ezw" value="jetbrains.mps.json.structure.LanguageConceptSwitch" />
             </node>
-            <node concept="3clFbS" id="ff" role="3Kbo56">
-              <node concept="3cpWs6" id="fg" role="3cqZAp">
-                <node concept="2ShNRf" id="fh" role="3cqZAk">
-                  <node concept="HV5vD" id="fi" role="2ShVmc">
-                    <ref role="HV5vE" node="bd" resolve="JsonObject_TextGen" />
+            <node concept="3clFbS" id="gj" role="3Kbo56">
+              <node concept="3cpWs6" id="gk" role="3cqZAp">
+                <node concept="2ShNRf" id="gl" role="3cqZAk">
+                  <node concept="HV5vD" id="gm" role="2ShVmc">
+                    <ref role="HV5vE" node="bT" resolve="JsonObject_TextGen" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3KbdKl" id="eB" role="3KbHQx">
-            <node concept="1n$iZg" id="fj" role="3Kbmr1">
+          <node concept="3KbdKl" id="fF" role="3KbHQx">
+            <node concept="1n$iZg" id="gn" role="3Kbmr1">
               <property role="1n_iUB" value="JsonString" />
               <property role="1n_ezw" value="jetbrains.mps.json.structure.LanguageConceptSwitch" />
             </node>
-            <node concept="3clFbS" id="fk" role="3Kbo56">
-              <node concept="3cpWs6" id="fl" role="3cqZAp">
-                <node concept="2ShNRf" id="fm" role="3cqZAk">
-                  <node concept="HV5vD" id="fn" role="2ShVmc">
-                    <ref role="HV5vE" node="c6" resolve="JsonString_TextGen" />
+            <node concept="3clFbS" id="go" role="3Kbo56">
+              <node concept="3cpWs6" id="gp" role="3cqZAp">
+                <node concept="2ShNRf" id="gq" role="3cqZAk">
+                  <node concept="HV5vD" id="gr" role="2ShVmc">
+                    <ref role="HV5vE" node="da" resolve="JsonString_TextGen" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="et" role="3cqZAp">
-          <node concept="10Nm6u" id="fo" role="3cqZAk" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="ep" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="e8" role="jymVt" />
-    <node concept="3clFb_" id="e9" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="breakdownToUnits" />
-      <property role="DiZV1" value="false" />
-      <property role="IEkAT" value="false" />
-      <node concept="3Tm1VV" id="fp" role="1B3o_S" />
-      <node concept="3cqZAl" id="fq" role="3clF45" />
-      <node concept="37vLTG" id="fr" role="3clF46">
-        <property role="TrG5h" value="outline" />
-        <node concept="3uibUv" id="fu" role="1tU5fm">
-          <ref role="3uigEE" to="yfwt:~TextGenModelOutline" resolve="TextGenModelOutline" />
-        </node>
-        <node concept="2AHcQZ" id="fv" role="2AJF6D">
-          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="fs" role="3clF47">
-        <node concept="1DcWWT" id="fw" role="3cqZAp">
-          <node concept="3clFbS" id="fx" role="2LFqv$">
-            <node concept="3clFbJ" id="f$" role="3cqZAp">
-              <node concept="3clFbS" id="f_" role="3clFbx">
-                <node concept="3cpWs8" id="fB" role="3cqZAp">
-                  <node concept="3cpWsn" id="fF" role="3cpWs9">
-                    <property role="TrG5h" value="fname" />
-                    <node concept="3uibUv" id="fG" role="1tU5fm">
-                      <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                    </node>
-                    <node concept="1rXfSq" id="fH" role="33vP2m">
-                      <ref role="37wK5l" node="ea" resolve="getFileName_JsonFile" />
-                      <node concept="37vLTw" id="fI" role="37wK5m">
-                        <ref role="3cqZAo" node="fy" resolve="root" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3cpWs8" id="fC" role="3cqZAp">
-                  <node concept="3cpWsn" id="fJ" role="3cpWs9">
-                    <property role="TrG5h" value="ext" />
-                    <node concept="3uibUv" id="fK" role="1tU5fm">
-                      <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                    </node>
-                    <node concept="1rXfSq" id="fL" role="33vP2m">
-                      <ref role="37wK5l" node="eb" resolve="getFileExtension_JsonFile" />
-                      <node concept="37vLTw" id="fM" role="37wK5m">
-                        <ref role="3cqZAo" node="fy" resolve="root" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="fD" role="3cqZAp">
-                  <node concept="2OqwBi" id="fN" role="3clFbG">
-                    <node concept="37vLTw" id="fO" role="2Oq$k0">
-                      <ref role="3cqZAo" node="fr" resolve="outline" />
-                    </node>
-                    <node concept="liA8E" id="fP" role="2OqNvi">
-                      <ref role="37wK5l" to="yfwt:~TextGenModelOutline.registerTextUnit(java.lang.String,java.nio.charset.Charset,org.jetbrains.mps.openapi.model.SNode...):void" resolve="registerTextUnit" />
-                      <node concept="3K4zz7" id="fQ" role="37wK5m">
-                        <node concept="1eOMI4" id="fS" role="3K4GZi">
-                          <node concept="3cpWs3" id="fV" role="1eOMHV">
-                            <node concept="37vLTw" id="fW" role="3uHU7w">
-                              <ref role="3cqZAo" node="fJ" resolve="ext" />
-                            </node>
-                            <node concept="3cpWs3" id="fX" role="3uHU7B">
-                              <node concept="37vLTw" id="fY" role="3uHU7B">
-                                <ref role="3cqZAo" node="fF" resolve="fname" />
-                              </node>
-                              <node concept="1Xhbcc" id="fZ" role="3uHU7w">
-                                <property role="1XhdNS" value="." />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="37vLTw" id="fT" role="3K4E3e">
-                          <ref role="3cqZAo" node="fF" resolve="fname" />
-                        </node>
-                        <node concept="3clFbC" id="fU" role="3K4Cdx">
-                          <node concept="10Nm6u" id="g0" role="3uHU7w" />
-                          <node concept="37vLTw" id="g1" role="3uHU7B">
-                            <ref role="3cqZAo" node="fJ" resolve="ext" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="37vLTw" id="fR" role="37wK5m">
-                        <ref role="3cqZAo" node="fy" resolve="root" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3N13vt" id="fE" role="3cqZAp" />
-              </node>
-              <node concept="2OqwBi" id="fA" role="3clFbw">
-                <node concept="2OqwBi" id="g2" role="2Oq$k0">
-                  <node concept="37vLTw" id="g4" role="2Oq$k0">
-                    <ref role="3cqZAo" node="fy" resolve="root" />
-                  </node>
-                  <node concept="liA8E" id="g5" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="g3" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
-                  <node concept="35c_gC" id="g6" role="37wK5m">
-                    <ref role="35c_gD" to="igrf:7DR9$wWYdtQ" resolve="JsonFile" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWsn" id="fy" role="1Duv9x">
-            <property role="TrG5h" value="root" />
-            <node concept="3uibUv" id="g7" role="1tU5fm">
-              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-            </node>
-          </node>
-          <node concept="2OqwBi" id="fz" role="1DdaDG">
-            <node concept="2OqwBi" id="g8" role="2Oq$k0">
-              <node concept="37vLTw" id="ga" role="2Oq$k0">
-                <ref role="3cqZAo" node="fr" resolve="outline" />
-              </node>
-              <node concept="liA8E" id="gb" role="2OqNvi">
-                <ref role="37wK5l" to="yfwt:~TextGenModelOutline.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
-              </node>
-            </node>
-            <node concept="liA8E" id="g9" role="2OqNvi">
-              <ref role="37wK5l" to="mhbf:~SModel.getRootNodes():java.lang.Iterable" resolve="getRootNodes" />
-            </node>
-          </node>
+        <node concept="3cpWs6" id="fx" role="3cqZAp">
+          <node concept="10Nm6u" id="gs" role="3cqZAk" />
         </node>
       </node>
       <node concept="2AHcQZ" id="ft" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2YIFZL" id="ea" role="jymVt">
+    <node concept="2tJIrI" id="fc" role="jymVt" />
+    <node concept="3clFb_" id="fd" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="breakdownToUnits" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <node concept="3Tm1VV" id="gt" role="1B3o_S" />
+      <node concept="3cqZAl" id="gu" role="3clF45" />
+      <node concept="37vLTG" id="gv" role="3clF46">
+        <property role="TrG5h" value="outline" />
+        <node concept="3uibUv" id="gy" role="1tU5fm">
+          <ref role="3uigEE" to="yfwt:~TextGenModelOutline" resolve="TextGenModelOutline" />
+        </node>
+        <node concept="2AHcQZ" id="gz" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="gw" role="3clF47">
+        <node concept="1DcWWT" id="g$" role="3cqZAp">
+          <node concept="3clFbS" id="g_" role="2LFqv$">
+            <node concept="3clFbJ" id="gC" role="3cqZAp">
+              <node concept="3clFbS" id="gD" role="3clFbx">
+                <node concept="3cpWs8" id="gF" role="3cqZAp">
+                  <node concept="3cpWsn" id="gJ" role="3cpWs9">
+                    <property role="TrG5h" value="fname" />
+                    <node concept="3uibUv" id="gK" role="1tU5fm">
+                      <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                    </node>
+                    <node concept="1rXfSq" id="gL" role="33vP2m">
+                      <ref role="37wK5l" node="fe" resolve="getFileName_JsonFile" />
+                      <node concept="37vLTw" id="gM" role="37wK5m">
+                        <ref role="3cqZAo" node="gA" resolve="root" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="gG" role="3cqZAp">
+                  <node concept="3cpWsn" id="gN" role="3cpWs9">
+                    <property role="TrG5h" value="ext" />
+                    <node concept="3uibUv" id="gO" role="1tU5fm">
+                      <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                    </node>
+                    <node concept="1rXfSq" id="gP" role="33vP2m">
+                      <ref role="37wK5l" node="ff" resolve="getFileExtension_JsonFile" />
+                      <node concept="37vLTw" id="gQ" role="37wK5m">
+                        <ref role="3cqZAo" node="gA" resolve="root" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="gH" role="3cqZAp">
+                  <node concept="2OqwBi" id="gR" role="3clFbG">
+                    <node concept="37vLTw" id="gS" role="2Oq$k0">
+                      <ref role="3cqZAo" node="gv" resolve="outline" />
+                    </node>
+                    <node concept="liA8E" id="gT" role="2OqNvi">
+                      <ref role="37wK5l" to="yfwt:~TextGenModelOutline.registerTextUnit(java.lang.String,java.nio.charset.Charset,org.jetbrains.mps.openapi.model.SNode...):void" resolve="registerTextUnit" />
+                      <node concept="3K4zz7" id="gU" role="37wK5m">
+                        <node concept="1eOMI4" id="gW" role="3K4GZi">
+                          <node concept="3cpWs3" id="gZ" role="1eOMHV">
+                            <node concept="37vLTw" id="h0" role="3uHU7w">
+                              <ref role="3cqZAo" node="gN" resolve="ext" />
+                            </node>
+                            <node concept="3cpWs3" id="h1" role="3uHU7B">
+                              <node concept="37vLTw" id="h2" role="3uHU7B">
+                                <ref role="3cqZAo" node="gJ" resolve="fname" />
+                              </node>
+                              <node concept="1Xhbcc" id="h3" role="3uHU7w">
+                                <property role="1XhdNS" value="." />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="gX" role="3K4E3e">
+                          <ref role="3cqZAo" node="gJ" resolve="fname" />
+                        </node>
+                        <node concept="3clFbC" id="gY" role="3K4Cdx">
+                          <node concept="10Nm6u" id="h4" role="3uHU7w" />
+                          <node concept="37vLTw" id="h5" role="3uHU7B">
+                            <ref role="3cqZAo" node="gN" resolve="ext" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="gV" role="37wK5m">
+                        <ref role="3cqZAo" node="gA" resolve="root" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3N13vt" id="gI" role="3cqZAp" />
+              </node>
+              <node concept="2OqwBi" id="gE" role="3clFbw">
+                <node concept="2OqwBi" id="h6" role="2Oq$k0">
+                  <node concept="37vLTw" id="h8" role="2Oq$k0">
+                    <ref role="3cqZAo" node="gA" resolve="root" />
+                  </node>
+                  <node concept="liA8E" id="h9" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SNode.getConcept():org.jetbrains.mps.openapi.language.SConcept" resolve="getConcept" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="h7" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                  <node concept="35c_gC" id="ha" role="37wK5m">
+                    <ref role="35c_gD" to="igrf:7DR9$wWYdtQ" resolve="JsonFile" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="gA" role="1Duv9x">
+            <property role="TrG5h" value="root" />
+            <node concept="3uibUv" id="hb" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="gB" role="1DdaDG">
+            <node concept="2OqwBi" id="hc" role="2Oq$k0">
+              <node concept="37vLTw" id="he" role="2Oq$k0">
+                <ref role="3cqZAo" node="gv" resolve="outline" />
+              </node>
+              <node concept="liA8E" id="hf" role="2OqNvi">
+                <ref role="37wK5l" to="yfwt:~TextGenModelOutline.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+              </node>
+            </node>
+            <node concept="liA8E" id="hd" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SModel.getRootNodes():java.lang.Iterable" resolve="getRootNodes" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="gx" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="fe" role="jymVt">
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getFileName_JsonFile" />
-      <node concept="3clFbS" id="gc" role="3clF47">
-        <node concept="3cpWs6" id="gg" role="3cqZAp">
-          <node concept="2OqwBi" id="gh" role="3cqZAk">
-            <node concept="37vLTw" id="gi" role="2Oq$k0">
-              <ref role="3cqZAo" node="gf" resolve="node" />
+      <node concept="3clFbS" id="hg" role="3clF47">
+        <node concept="3cpWs6" id="hk" role="3cqZAp">
+          <node concept="2OqwBi" id="hl" role="3cqZAk">
+            <node concept="37vLTw" id="hm" role="2Oq$k0">
+              <ref role="3cqZAo" node="hj" resolve="node" />
             </node>
-            <node concept="liA8E" id="gj" role="2OqNvi">
+            <node concept="liA8E" id="hn" role="2OqNvi">
               <ref role="37wK5l" to="mhbf:~SNode.getName():java.lang.String" resolve="getName" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="gd" role="1B3o_S" />
-      <node concept="3uibUv" id="ge" role="3clF45">
+      <node concept="3Tm6S6" id="hh" role="1B3o_S" />
+      <node concept="3uibUv" id="hi" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
-      <node concept="37vLTG" id="gf" role="3clF46">
+      <node concept="37vLTG" id="hj" role="3clF46">
         <property role="TrG5h" value="node" />
-        <node concept="3uibUv" id="gk" role="1tU5fm">
+        <node concept="3uibUv" id="ho" role="1tU5fm">
           <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
         </node>
       </node>
     </node>
-    <node concept="2YIFZL" id="eb" role="jymVt">
+    <node concept="2YIFZL" id="ff" role="jymVt">
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getFileExtension_JsonFile" />
-      <node concept="3clFbS" id="gl" role="3clF47">
-        <node concept="3clFbF" id="gp" role="3cqZAp">
-          <node concept="Xl_RD" id="gq" role="3clFbG">
+      <node concept="3clFbS" id="hp" role="3clF47">
+        <node concept="3clFbF" id="ht" role="3cqZAp">
+          <node concept="Xl_RD" id="hu" role="3clFbG">
             <property role="Xl_RC" value="json" />
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="gm" role="1B3o_S" />
-      <node concept="3uibUv" id="gn" role="3clF45">
+      <node concept="3Tm6S6" id="hq" role="1B3o_S" />
+      <node concept="3uibUv" id="hr" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
-      <node concept="37vLTG" id="go" role="3clF46">
+      <node concept="37vLTG" id="hs" role="3clF46">
         <property role="TrG5h" value="node" />
-        <node concept="3uibUv" id="gr" role="1tU5fm">
+        <node concept="3uibUv" id="hv" role="1tU5fm">
           <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
         </node>
       </node>
