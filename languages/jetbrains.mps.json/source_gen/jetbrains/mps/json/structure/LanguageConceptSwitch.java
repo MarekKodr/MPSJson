@@ -18,18 +18,20 @@ public final class LanguageConceptSwitch {
   public static final int JsonNumber = 6;
   public static final int JsonObject = 7;
   public static final int JsonString = 8;
+  public static final int JsonValue = 9;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xec603e7355e84c6bL, 0xac1ff7a01e487844L);
     builder.put(0x7a7726483cf8d791L, JsonArray);
     builder.put(0x466056e3dedf892bL, JsonBool);
     builder.put(0x7a7726483cf8d777L, JsonDocument);
-    builder.put(0x466056e3dee0fb8aL, JsonElement);
+    builder.put(0x466056e3dee34c54L, JsonElement);
     builder.put(0x7a7726483cf8d776L, JsonFile);
     builder.put(0x466056e3dedf892aL, JsonNull);
     builder.put(0x466056e3dedf8924L, JsonNumber);
     builder.put(0x7a7726483cf8d786L, JsonObject);
     builder.put(0x466056e3dedf891fL, JsonString);
+    builder.put(0x466056e3dee0fb8aL, JsonValue);
     myIndex = builder.seal();
   }
 

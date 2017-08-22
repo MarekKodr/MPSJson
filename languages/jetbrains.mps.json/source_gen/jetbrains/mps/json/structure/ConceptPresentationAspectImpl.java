@@ -18,6 +18,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_JsonNumber;
   private ConceptPresentation props_JsonObject;
   private ConceptPresentation props_JsonString;
+  private ConceptPresentation props_JsonValue;
 
   @Override
   @Nullable
@@ -27,14 +28,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.JsonArray:
         if (props_JsonArray == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("array");
           props_JsonArray = cpb.create();
         }
         return props_JsonArray;
       case LanguageConceptSwitch.JsonBool:
         if (props_JsonBool == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("bool");
           props_JsonBool = cpb.create();
         }
         return props_JsonBool;
@@ -48,6 +49,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.JsonElement:
         if (props_JsonElement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
           props_JsonElement = cpb.create();
         }
         return props_JsonElement;
@@ -61,31 +63,37 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.JsonNull:
         if (props_JsonNull == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("null");
           props_JsonNull = cpb.create();
         }
         return props_JsonNull;
       case LanguageConceptSwitch.JsonNumber:
         if (props_JsonNumber == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("number");
           props_JsonNumber = cpb.create();
         }
         return props_JsonNumber;
       case LanguageConceptSwitch.JsonObject:
         if (props_JsonObject == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("object");
           props_JsonObject = cpb.create();
         }
         return props_JsonObject;
       case LanguageConceptSwitch.JsonString:
         if (props_JsonString == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("string");
           props_JsonString = cpb.create();
         }
         return props_JsonString;
+      case LanguageConceptSwitch.JsonValue:
+        if (props_JsonValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_JsonValue = cpb.create();
+        }
+        return props_JsonValue;
     }
     return null;
   }

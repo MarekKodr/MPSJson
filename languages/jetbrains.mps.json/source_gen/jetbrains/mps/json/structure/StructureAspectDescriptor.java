@@ -21,6 +21,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptJsonNumber = createDescriptorForJsonNumber();
   /*package*/ final ConceptDescriptor myConceptJsonObject = createDescriptorForJsonObject();
   /*package*/ final ConceptDescriptor myConceptJsonString = createDescriptorForJsonString();
+  /*package*/ final ConceptDescriptor myConceptJsonValue = createDescriptorForJsonValue();
   private final LanguageConceptSwitch myConceptIndex;
 
   public StructureAspectDescriptor() {
@@ -29,7 +30,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptJsonArray, myConceptJsonBool, myConceptJsonDocument, myConceptJsonElement, myConceptJsonFile, myConceptJsonNull, myConceptJsonNumber, myConceptJsonObject, myConceptJsonString);
+    return Arrays.asList(myConceptJsonArray, myConceptJsonBool, myConceptJsonDocument, myConceptJsonElement, myConceptJsonFile, myConceptJsonNull, myConceptJsonNumber, myConceptJsonObject, myConceptJsonString, myConceptJsonValue);
   }
 
   @Override
@@ -54,6 +55,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptJsonObject;
       case LanguageConceptSwitch.JsonString:
         return myConceptJsonString;
+      case LanguageConceptSwitch.JsonValue:
+        return myConceptJsonValue;
       default:
         return null;
     }
@@ -66,71 +69,86 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForJsonArray() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonArray", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d791L);
     b.class_(false, false, false);
-    b.super_("jetbrains.mps.json.structure.JsonElement", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
+    b.super_("jetbrains.mps.json.structure.JsonValue", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
     b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/8824564086558218129");
-    b.aggregate("values", 0x7a7726483cf8d792L).target(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d786L).optional(true).ordered(true).multiple(true).origin("8824564086558218130").done();
+    b.aggregate("values", 0x7a7726483cf8d792L).target(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL).optional(true).ordered(true).multiple(true).origin("8824564086558218130").done();
+    b.alias("array");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForJsonBool() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonBool", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dedf892bL);
     b.class_(false, false, false);
-    b.super_("jetbrains.mps.json.structure.JsonElement", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
+    b.super_("jetbrains.mps.json.structure.JsonValue", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
     b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/5071148717115935019");
     b.prop("value", 0x466056e3dedf892cL, "5071148717115935020");
+    b.alias("bool");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForJsonDocument() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonDocument", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d777L);
     b.class_(false, false, false);
     b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/8824564086558218103");
-    b.aggregate("elements", 0x7a7726483cf8d779L).target(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL).optional(true).ordered(true).multiple(true).origin("8824564086558218105").done();
+    b.aggregate("elements", 0x7a7726483cf8d779L).target(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee34c54L).optional(true).ordered(true).multiple(true).origin("8824564086558218105").done();
     b.alias("json document");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForJsonElement() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonElement", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
-    b.class_(false, true, false);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonElement", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee34c54L);
+    b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/5071148717116029834");
+    b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/5071148717116181588");
+    b.aggregate("value", 0x466056e3dee34c55L).target(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL).optional(false).ordered(true).multiple(false).origin("5071148717116181589").done();
+    b.alias("element");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForJsonFile() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonFile", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d776L);
     b.class_(false, false, true);
     b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/8824564086558218102");
-    b.aggregate("document", 0x7a7726483cf8d77cL).target(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d777L).optional(false).ordered(true).multiple(false).origin("8824564086558218108").done();
+    b.aggregate("document", 0x7a7726483cf8d77cL).target(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d777L).optional(false).ordered(true).multiple(true).origin("8824564086558218108").done();
     b.alias("json file");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForJsonNull() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonNull", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dedf892aL);
     b.class_(false, false, false);
-    b.super_("jetbrains.mps.json.structure.JsonElement", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
+    b.super_("jetbrains.mps.json.structure.JsonValue", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
     b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/5071148717115935018");
+    b.alias("null");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForJsonNumber() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonNumber", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dedf8924L);
     b.class_(false, false, false);
-    b.super_("jetbrains.mps.json.structure.JsonElement", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
+    b.super_("jetbrains.mps.json.structure.JsonValue", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
     b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/5071148717115935012");
     b.prop("value", 0x466056e3dedf8927L, "5071148717115935015");
+    b.alias("number");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForJsonObject() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonObject", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d786L);
     b.class_(false, false, false);
-    b.super_("jetbrains.mps.json.structure.JsonElement", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
+    b.super_("jetbrains.mps.json.structure.JsonValue", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
     b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/8824564086558218118");
-    b.aggregate("objects", 0x7a7726483cf8d787L).target(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL).optional(true).ordered(true).multiple(true).origin("8824564086558218119").done();
+    b.aggregate("objects", 0x7a7726483cf8d787L).target(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee34c54L).optional(true).ordered(true).multiple(true).origin("8824564086558218119").done();
+    b.alias("object");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForJsonString() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonString", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dedf891fL);
     b.class_(false, false, false);
-    b.super_("jetbrains.mps.json.structure.JsonElement", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
+    b.super_("jetbrains.mps.json.structure.JsonValue", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
     b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/5071148717115935007");
     b.prop("value", 0x466056e3dedf8920L, "5071148717115935008");
+    b.alias("string");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForJsonValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("jetbrains.mps.json", "JsonValue", 0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee0fb8aL);
+    b.class_(false, true, false);
+    b.origin("r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/5071148717116029834");
+    b.alias("value");
     return b.create();
   }
 }
