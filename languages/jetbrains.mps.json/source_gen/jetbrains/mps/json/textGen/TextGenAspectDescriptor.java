@@ -26,8 +26,6 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new JsonDocument_TextGen();
       case LanguageConceptSwitch.JsonFile:
         return new JsonFile_TextGen();
-      case LanguageConceptSwitch.JsonValue:
-        return new JsonValue_TextGen();
     }
     return null;
   }

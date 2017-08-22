@@ -10,20 +10,24 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int JsonArray = 0;
-  public static final int JsonDocument = 1;
-  public static final int JsonElement = 2;
+  public static final int JsonBool = 1;
+  public static final int JsonDocument = 2;
   public static final int JsonFile = 3;
-  public static final int JsonSet = 4;
-  public static final int JsonValue = 5;
+  public static final int JsonInteger = 4;
+  public static final int JsonNull = 5;
+  public static final int JsonObject = 6;
+  public static final int JsonString = 7;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xec603e7355e84c6bL, 0xac1ff7a01e487844L);
     builder.put(0x7a7726483cf8d791L, JsonArray);
+    builder.put(0x466056e3dedf892bL, JsonBool);
     builder.put(0x7a7726483cf8d777L, JsonDocument);
-    builder.put(0x7a7726483cf8d778L, JsonElement);
     builder.put(0x7a7726483cf8d776L, JsonFile);
-    builder.put(0x7a7726483cf8d786L, JsonSet);
-    builder.put(0x7a7726483cf8d782L, JsonValue);
+    builder.put(0x466056e3dedf8924L, JsonInteger);
+    builder.put(0x466056e3dedf892aL, JsonNull);
+    builder.put(0x7a7726483cf8d786L, JsonObject);
+    builder.put(0x466056e3dedf891fL, JsonString);
     myIndex = builder.seal();
   }
 

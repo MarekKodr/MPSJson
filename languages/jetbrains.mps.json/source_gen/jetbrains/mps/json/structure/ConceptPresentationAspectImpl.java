@@ -10,11 +10,13 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_JsonArray;
+  private ConceptPresentation props_JsonBool;
   private ConceptPresentation props_JsonDocument;
-  private ConceptPresentation props_JsonElement;
   private ConceptPresentation props_JsonFile;
-  private ConceptPresentation props_JsonSet;
-  private ConceptPresentation props_JsonValue;
+  private ConceptPresentation props_JsonInteger;
+  private ConceptPresentation props_JsonNull;
+  private ConceptPresentation props_JsonObject;
+  private ConceptPresentation props_JsonString;
 
   @Override
   @Nullable
@@ -24,10 +26,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.JsonArray:
         if (props_JsonArray == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("JsonArray");
+          cpb.presentationByName();
           props_JsonArray = cpb.create();
         }
         return props_JsonArray;
+      case LanguageConceptSwitch.JsonBool:
+        if (props_JsonBool == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("JsonBool");
+          props_JsonBool = cpb.create();
+        }
+        return props_JsonBool;
       case LanguageConceptSwitch.JsonDocument:
         if (props_JsonDocument == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -35,12 +44,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_JsonDocument = cpb.create();
         }
         return props_JsonDocument;
-      case LanguageConceptSwitch.JsonElement:
-        if (props_JsonElement == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_JsonElement = cpb.create();
-        }
-        return props_JsonElement;
       case LanguageConceptSwitch.JsonFile:
         if (props_JsonFile == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -48,20 +51,33 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_JsonFile = cpb.create();
         }
         return props_JsonFile;
-      case LanguageConceptSwitch.JsonSet:
-        if (props_JsonSet == null) {
+      case LanguageConceptSwitch.JsonInteger:
+        if (props_JsonInteger == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_JsonSet = cpb.create();
+          props_JsonInteger = cpb.create();
         }
-        return props_JsonSet;
-      case LanguageConceptSwitch.JsonValue:
-        if (props_JsonValue == null) {
+        return props_JsonInteger;
+      case LanguageConceptSwitch.JsonNull:
+        if (props_JsonNull == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("JsonNull");
+          props_JsonNull = cpb.create();
+        }
+        return props_JsonNull;
+      case LanguageConceptSwitch.JsonObject:
+        if (props_JsonObject == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_JsonObject = cpb.create();
+        }
+        return props_JsonObject;
+      case LanguageConceptSwitch.JsonString:
+        if (props_JsonString == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_JsonValue = cpb.create();
+          props_JsonString = cpb.create();
         }
-        return props_JsonValue;
+        return props_JsonString;
     }
     return null;
   }
