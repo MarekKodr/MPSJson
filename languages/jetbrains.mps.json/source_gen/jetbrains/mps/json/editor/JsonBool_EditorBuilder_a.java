@@ -101,7 +101,7 @@ import jetbrains.mps.nodeEditor.EditorManager;
   private EditorCell createProperty_omrdil_e0() {
     CellProviderWithRole provider = new PropertyCellProvider(myNode, getEditorContext());
     provider.setRole("value");
-    provider.setNoTargetText("<no value>");
+    provider.setNoTargetText("");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_value");

@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class JsonInteger_Editor extends DefaultNodeEditor {
+public class JsonNumber_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new JsonInteger_EditorBuilder_a(editorContext, node).createCell();
+    return new JsonNumber_EditorBuilder_a(editorContext, node).createCell();
   }
 }

@@ -14,8 +14,8 @@ public final class LanguageConceptSwitch {
   public static final int JsonDocument = 2;
   public static final int JsonElement = 3;
   public static final int JsonFile = 4;
-  public static final int JsonInteger = 5;
-  public static final int JsonNull = 6;
+  public static final int JsonNull = 5;
+  public static final int JsonNumber = 6;
   public static final int JsonObject = 7;
   public static final int JsonString = 8;
 
@@ -26,8 +26,8 @@ public final class LanguageConceptSwitch {
     builder.put(0x7a7726483cf8d777L, JsonDocument);
     builder.put(0x466056e3dee0fb8aL, JsonElement);
     builder.put(0x7a7726483cf8d776L, JsonFile);
-    builder.put(0x466056e3dedf8924L, JsonInteger);
     builder.put(0x466056e3dedf892aL, JsonNull);
+    builder.put(0x466056e3dedf8924L, JsonNumber);
     builder.put(0x7a7726483cf8d786L, JsonObject);
     builder.put(0x466056e3dedf891fL, JsonString);
     myIndex = builder.seal();

@@ -10,6 +10,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -115,13 +118,13 @@
   </node>
   <node concept="1TIwiD" id="4pwlIfuRS$$">
     <property role="EcuMT" value="5071148717115935012" />
-    <property role="TrG5h" value="JsonInteger" />
+    <property role="TrG5h" value="JsonNumber" />
     <property role="3GE5qa" value="JsonElements" />
     <ref role="1TJDcQ" node="4pwlIfuSfIa" resolve="JsonElement" />
     <node concept="1TJgyi" id="4pwlIfuRS$B" role="1TKVEl">
       <property role="IQ2nx" value="5071148717115935015" />
       <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="4pwlIfuSDsa" resolve="Number" />
     </node>
   </node>
   <node concept="1TIwiD" id="4pwlIfuRS$E">
@@ -150,6 +153,10 @@
     <node concept="PrWs8" id="4pwlIfuSfIb" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="Az7Fb" id="4pwlIfuSDsa">
+    <property role="TrG5h" value="Number" />
+    <property role="FLfZY" value="[-+]?[0-9]*[0-9].[0-9]*[0-9]|[-+]?[0-9]*[0-9]" />
   </node>
 </model>
 

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="ConceptPresentationAspectImpl.java">
       <unit at="11,0,93,0" name="jetbrains.mps.json.structure.ConceptPresentationAspectImpl" />
@@ -9,6 +15,26 @@
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,137,0" name="jetbrains.mps.json.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:3888aa22-4be6-408f-b060-b135b1a065c3(jetbrains.mps.json.structure)/5071148717116135178">
+    <file name="Number_PropertySupport.java">
+      <node id="5071148717116135178" at="8,44,9,28" concept="4" />
+      <node id="5071148717116135178" at="10,24,11,21" concept="1" />
+      <node id="5071148717116135178" at="12,12,13,24" concept="1" />
+      <node id="5071148717116135178" at="14,5,15,78" concept="5" />
+      <node id="5071148717116135178" at="12,10,14,5" concept="0" />
+      <node id="5071148717116135178" at="9,28,14,5" concept="2" />
+      <node id="5071148717116135178" at="8,0,17,0" concept="3" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <scope id="5071148717116135178" at="10,24,11,21" />
+      <scope id="5071148717116135178" at="12,12,13,24" />
+      <scope id="5071148717116135178" at="8,44,15,78">
+        <var name="testValue" id="5071148717116135178" />
+      </scope>
+      <scope id="5071148717116135178" at="8,0,17,0">
+        <var name="value" id="5071148717116135178" />
+      </scope>
+      <unit id="5071148717116135178" at="7,0,18,0" name="jetbrains.mps.json.structure.Number_PropertySupport" />
     </file>
   </root>
 </debug-info>

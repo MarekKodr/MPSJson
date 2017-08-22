@@ -7,8 +7,8 @@
     <classNode dependClassName="jetbrains.mps.json.editor.JsonBool_Editor" />
     <classNode dependClassName="jetbrains.mps.json.editor.JsonDocument_Editor" />
     <classNode dependClassName="jetbrains.mps.json.editor.JsonFile_Editor" />
-    <classNode dependClassName="jetbrains.mps.json.editor.JsonInteger_Editor" />
     <classNode dependClassName="jetbrains.mps.json.editor.JsonNull_Editor" />
+    <classNode dependClassName="jetbrains.mps.json.editor.JsonNumber_Editor" />
     <classNode dependClassName="jetbrains.mps.json.editor.JsonObject_Editor" />
     <classNode dependClassName="jetbrains.mps.json.editor.JsonString_Editor" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
@@ -138,14 +138,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="jetbrains.mps.json.editor.JsonInteger_Editor" file="JsonInteger_Editor.java">
-    <classNode dependClassName="jetbrains.mps.json.editor.JsonInteger_EditorBuilder_a" />
+  <dependency className="jetbrains.mps.json.editor.JsonNull_Editor" file="JsonNull_Editor.java">
+    <classNode dependClassName="jetbrains.mps.json.editor.JsonNull_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="jetbrains.mps.json.editor.JsonInteger_EditorBuilder_a" file="JsonInteger_EditorBuilder_a.java">
+  <dependency className="jetbrains.mps.json.editor.JsonNull_EditorBuilder_a" file="JsonNull_EditorBuilder_a.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
@@ -164,14 +164,14 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="jetbrains.mps.json.editor.JsonNull_Editor" file="JsonNull_Editor.java">
-    <classNode dependClassName="jetbrains.mps.json.editor.JsonNull_EditorBuilder_a" />
+  <dependency className="jetbrains.mps.json.editor.JsonNumber_Editor" file="JsonNumber_Editor.java">
+    <classNode dependClassName="jetbrains.mps.json.editor.JsonNumber_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="jetbrains.mps.json.editor.JsonNull_EditorBuilder_a" file="JsonNull_EditorBuilder_a.java">
+  <dependency className="jetbrains.mps.json.editor.JsonNumber_EditorBuilder_a" file="JsonNumber_EditorBuilder_a.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
@@ -202,11 +202,15 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />

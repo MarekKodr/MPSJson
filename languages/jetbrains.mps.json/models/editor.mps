@@ -29,6 +29,8 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -59,6 +61,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -73,6 +76,9 @@
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -225,7 +231,7 @@
   </node>
   <node concept="24kQdi" id="4pwlIfuS1sP">
     <property role="3GE5qa" value="JsonElements" />
-    <ref role="1XX52x" to="igrf:4pwlIfuRS$$" resolve="JsonInteger" />
+    <ref role="1XX52x" to="igrf:4pwlIfuRS$$" resolve="JsonNumber" />
     <node concept="3EZMnI" id="4pwlIfuS1sQ" role="2wV5jI">
       <node concept="3F0ifn" id="4pwlIfuS1sR" role="3EZMnx">
         <property role="3F0ifm" value="{" />
@@ -301,8 +307,66 @@
     <property role="3GE5qa" value="JsonElements" />
     <ref role="1XX52x" to="igrf:7DR9$wWYdu6" resolve="JsonObject" />
     <node concept="3EZMnI" id="4pwlIfuSiFz" role="2wV5jI">
+      <node concept="3F0ifn" id="4pwlIfuSwnW" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <node concept="pkWqt" id="4pwlIfuS$Ss" role="pqm2j">
+          <node concept="3clFbS" id="4pwlIfuS$St" role="2VODD2">
+            <node concept="3clFbF" id="4pwlIfuS$Su" role="3cqZAp">
+              <node concept="2OqwBi" id="4pwlIfuS$Sv" role="3clFbG">
+                <node concept="2OqwBi" id="4pwlIfuS$Sw" role="2Oq$k0">
+                  <node concept="pncrf" id="4pwlIfuS$Sx" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="4pwlIfuS$Sy" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="4pwlIfuS$Sz" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4pwlIfuSwnA" role="3EZMnx">
+        <property role="1$x2rV" value="pokus" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="pkWqt" id="4pwlIfuSy6C" role="pqm2j">
+          <node concept="3clFbS" id="4pwlIfuSy6D" role="2VODD2">
+            <node concept="3clFbF" id="4pwlIfuSydM" role="3cqZAp">
+              <node concept="2OqwBi" id="4pwlIfuSzTz" role="3clFbG">
+                <node concept="2OqwBi" id="4pwlIfuSyva" role="2Oq$k0">
+                  <node concept="pncrf" id="4pwlIfuSydL" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="4pwlIfuSz3a" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="4pwlIfuS$J1" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4pwlIfuSwok" role="3EZMnx">
+        <property role="3F0ifm" value="&quot; :" />
+        <node concept="pkWqt" id="4pwlIfuS_2a" role="pqm2j">
+          <node concept="3clFbS" id="4pwlIfuS_2b" role="2VODD2">
+            <node concept="3clFbF" id="4pwlIfuS_2c" role="3cqZAp">
+              <node concept="2OqwBi" id="4pwlIfuS_2d" role="3clFbG">
+                <node concept="2OqwBi" id="4pwlIfuS_2e" role="2Oq$k0">
+                  <node concept="pncrf" id="4pwlIfuS_2f" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="4pwlIfuS_2g" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="4pwlIfuS_2h" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="4pwlIfuSiFE" role="3EZMnx">
         <property role="3F0ifm" value="{" />
+        <node concept="pVoyu" id="4pwlIfuSqaJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F2HdR" id="4pwlIfuSiFS" role="3EZMnx">
         <ref role="1NtTu8" to="igrf:7DR9$wWYdu7" resolve="objects" />
@@ -437,6 +501,7 @@
         <property role="3F0ifm" value="&quot; :" />
       </node>
       <node concept="3F0A7n" id="4pwlIfuSnCI" role="3EZMnx">
+        <property role="39s7Ar" value="true" />
         <ref role="1NtTu8" to="igrf:4pwlIfuRS$G" resolve="value" />
       </node>
       <node concept="3F0ifn" id="4pwlIfuSmE1" role="3EZMnx">

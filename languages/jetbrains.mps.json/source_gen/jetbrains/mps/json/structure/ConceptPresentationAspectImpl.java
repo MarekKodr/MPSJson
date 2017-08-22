@@ -14,8 +14,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_JsonDocument;
   private ConceptPresentation props_JsonElement;
   private ConceptPresentation props_JsonFile;
-  private ConceptPresentation props_JsonInteger;
   private ConceptPresentation props_JsonNull;
+  private ConceptPresentation props_JsonNumber;
   private ConceptPresentation props_JsonObject;
   private ConceptPresentation props_JsonString;
 
@@ -58,13 +58,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_JsonFile = cpb.create();
         }
         return props_JsonFile;
-      case LanguageConceptSwitch.JsonInteger:
-        if (props_JsonInteger == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_JsonInteger = cpb.create();
-        }
-        return props_JsonInteger;
       case LanguageConceptSwitch.JsonNull:
         if (props_JsonNull == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -72,6 +65,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_JsonNull = cpb.create();
         }
         return props_JsonNull;
+      case LanguageConceptSwitch.JsonNumber:
+        if (props_JsonNumber == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_JsonNumber = cpb.create();
+        }
+        return props_JsonNumber;
       case LanguageConceptSwitch.JsonObject:
         if (props_JsonObject == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
