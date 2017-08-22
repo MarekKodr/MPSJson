@@ -13,14 +13,14 @@ public class JsonBaseObject_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append("[");
+    tgs.append("{");
     tgs.newLine();
-    tgs.indent();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d777L, 0x7a7726483cf8d779L, "elements"))) {
       tgs.appendNode(item);
     }
     tgs.newLine();
-    tgs.append("]");
+    tgs.append("}");
+    tgs.newLine();
 
   }
 }
