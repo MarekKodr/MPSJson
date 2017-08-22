@@ -1,18 +1,8 @@
 [
   {
-    "arr1":    [
-      {
-        "prvnipolozka":        "1",
-        "druhapolozka":        "2"
-      }      [
-        false,
-        false,
-        [
-1,
-2,
-3
-        ]
-      ]
-    ]
+    "string1":"str1",
+    "number1":1,
+    "null1":    null,
+    "bool1":    false
   }
 ]
