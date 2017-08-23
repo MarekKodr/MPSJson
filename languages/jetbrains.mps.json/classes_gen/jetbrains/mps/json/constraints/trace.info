@@ -1,8 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,20,0" name="jetbrains.mps.json.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,29,0" name="jetbrains.mps.json.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:3d9cb90f-b171-4c24-ba4f-e0118ca0d3c4(jetbrains.mps.json.constraints)/3594524476835161072">
+    <file name="JsonElement_Constraints.java">
+      <node id="3594524476835161072" at="20,36,21,148" concept="6" />
+      <node id="3594524476835161072" at="25,84,26,119" concept="4" />
+      <node id="3594524476835161072" at="29,40,30,20" concept="5" />
+      <node id="3594524476835161072" at="33,76,34,37" concept="4" />
+      <node id="3594524476835204195" at="36,43,37,320" concept="5" />
+      <node id="3594524476835211440" at="39,13,40,23" concept="5" />
+      <node id="3594524476835218176" at="41,9,42,20" concept="5" />
+      <node id="3594524476835161072" at="44,7,45,22" concept="5" />
+      <node id="3594524476835161072" at="20,0,23,0" concept="0" trace="JsonElement_Constraints#()V" />
+      <node id="3594524476835204193" at="36,0,39,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="3594524476835161072" at="28,0,32,0" concept="3" trace="hasOwnValidator#()Z" />
+      <node id="3594524476835209019" at="34,37,41,9" concept="2" />
+      <node id="3594524476835161072" at="32,0,44,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="3594524476835161072" at="26,119,44,7" concept="1" />
+      <node id="3594524476835161072" at="24,0,47,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="3594524476835161072" at="20,36,21,148" />
+      <scope id="3594524476835161072" at="29,40,30,20" />
+      <scope id="3594524476835204194" at="36,43,37,320" />
+      <scope id="3594524476835209021" at="39,13,40,23" />
+      <scope id="3594524476835161072" at="20,0,23,0" />
+      <scope id="3594524476835204193" at="36,0,39,0">
+        <var name="it" id="3594524476835204193" />
+      </scope>
+      <scope id="3594524476835161072" at="28,0,32,0" />
+      <scope id="3594524476835161072" at="33,76,42,20">
+        <var name="propertyName" id="3594524476835161072" />
+      </scope>
+      <scope id="3594524476835161072" at="32,0,44,0">
+        <var name="node" id="3594524476835161072" />
+        <var name="propertyValue" id="3594524476835161072" />
+      </scope>
+      <scope id="3594524476835161072" at="25,84,45,22">
+        <var name="properties" id="3594524476835161072" />
+      </scope>
+      <scope id="3594524476835161072" at="24,0,47,0" />
+      <unit id="3594524476835204193" at="35,252,39,9" name="jetbrains.mps.json.constraints.JsonElement_Constraints$1$1" />
+      <unit id="3594524476835161072" at="27,137,44,5" name="jetbrains.mps.json.constraints.JsonElement_Constraints$1" />
+      <unit id="3594524476835161072" at="19,0,48,0" name="jetbrains.mps.json.constraints.JsonElement_Constraints" />
     </file>
   </root>
 </debug-info>

@@ -13,7 +13,9 @@
       <concept id="5071148717115935012" name="jetbrains.mps.json.structure.JsonNumber" flags="ng" index="2oJXZ7">
         <property id="5071148717115935015" name="value" index="2oJXZ4" />
       </concept>
-      <concept id="5071148717115935019" name="jetbrains.mps.json.structure.JsonBool" flags="ng" index="2oJXZ8" />
+      <concept id="5071148717115935019" name="jetbrains.mps.json.structure.JsonBool" flags="ng" index="2oJXZ8">
+        <property id="5071148717115935020" name="value" index="2oJXZf" />
+      </concept>
       <concept id="5071148717115935018" name="jetbrains.mps.json.structure.JsonNull" flags="ng" index="2oJXZ9" />
       <concept id="5071148717115935007" name="jetbrains.mps.json.structure.JsonString" flags="ng" index="2oJXZW">
         <property id="5071148717115935008" name="value" index="2oJXZ3" />
@@ -113,6 +115,12 @@
       <node concept="2owLER" id="7pupFtvsY92" role="16zZ4L">
         <property role="TrG5h" value="bool1" />
         <node concept="2oJXZ8" id="7pupFtvsY9c" role="2owLEQ" />
+      </node>
+      <node concept="2owLER" id="37ykfuidwLc" role="16zZ4L">
+        <property role="TrG5h" value="bool1" />
+        <node concept="2oJXZ8" id="37ykfuidwLy" role="2owLEQ">
+          <property role="2oJXZf" value="true" />
+        </node>
       </node>
     </node>
   </node>
