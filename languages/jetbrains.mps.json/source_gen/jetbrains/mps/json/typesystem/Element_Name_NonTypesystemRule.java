@@ -21,12 +21,11 @@ public class Element_Name_NonTypesystemRule extends AbstractNonTypesystemRule_Ru
   public Element_Name_NonTypesystemRule() {
   }
   public void applyRule(final SNode jsonElement, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    boolean b = Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(jsonElement, false), MetaAdapterFactory.getConcept(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee34c54L, "jetbrains.mps.json.structure.JsonElement"))).any(new IWhereFilter<SNode>() {
+    if (Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getAllSiblings(jsonElement, false), MetaAdapterFactory.getConcept(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee34c54L, "jetbrains.mps.json.structure.JsonElement"))).any(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) == SPropertyOperations.getString(jsonElement, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
       }
-    });
-    if (b == true) {
+    })) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(jsonElement, "duplicate name", "r:896498ed-e106-477b-a07d-4aa6c907fd18(jetbrains.mps.json.typesystem)", "3594524476835285692", null, errorTarget);
