@@ -49,6 +49,7 @@
   <dependency className="jetbrains.mps.json.textGen.JsonNull_TextGen" file="JsonNull_TextGen.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
@@ -65,6 +66,7 @@
   <dependency className="jetbrains.mps.json.textGen.JsonObject_TextGen" file="JsonObject_TextGen.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
     <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
@@ -73,6 +75,7 @@
   </dependency>
   <dependency className="jetbrains.mps.json.textGen.JsonString_TextGen" file="JsonString_TextGen.java">
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />

@@ -117,10 +117,14 @@
         <node concept="2oJXZ8" id="7pupFtvsY9c" role="2owLEQ" />
       </node>
       <node concept="2owLER" id="37ykfuidwLc" role="16zZ4L">
-        <property role="TrG5h" value="bool1" />
+        <property role="TrG5h" value="bool2" />
         <node concept="2oJXZ8" id="37ykfuidwLy" role="2owLEQ">
           <property role="2oJXZf" value="true" />
         </node>
+      </node>
+      <node concept="2owLER" id="37ykfuidxq7" role="16zZ4L">
+        <property role="TrG5h" value="fsa§" />
+        <node concept="2oJXZ9" id="37ykfuidxqx" role="2owLEQ" />
       </node>
     </node>
   </node>

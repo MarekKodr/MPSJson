@@ -2,7 +2,9 @@
   {
     "string1":"str1",
     "number1":1,
-    "null1":    null,
-    "bool1":    false
+    "null1":null,
+    "bool1":false,
+    "bool1":true,
+    "fsa§":null
   }
 ]

@@ -6,15 +6,30 @@ import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class JsonNull_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
+
+    if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(ctx.getPrimaryInput()), MetaAdapterFactory.getConcept(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee34c54L, "jetbrains.mps.json.structure.JsonElement"))) {
+      tgs.decreaseIndent();
+      tgs.decreaseIndent();
+    }
+
     if (SNodeOperations.getNextSibling(ctx.getPrimaryInput()) == null) {
+      tgs.indent();
       tgs.append("null");
     } else {
+      tgs.indent();
       tgs.append("null,");
+      tgs.newLine();
     }
+    if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(ctx.getPrimaryInput()), MetaAdapterFactory.getConcept(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x466056e3dee34c54L, "jetbrains.mps.json.structure.JsonElement"))) {
+      tgs.increaseIndent();
+      tgs.increaseIndent();
+    }
+
   }
 }

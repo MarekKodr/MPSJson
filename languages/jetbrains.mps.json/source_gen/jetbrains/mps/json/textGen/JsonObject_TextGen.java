@@ -8,17 +8,27 @@ import jetbrains.mps.text.impl.TextGenSupport;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public class JsonObject_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
+    tgs.indent();
     tgs.append("{");
     tgs.newLine();
     for (SNode item : SLinkOperations.getChildren(ctx.getPrimaryInput(), MetaAdapterFactory.getContainmentLink(0xec603e7355e84c6bL, 0xac1ff7a01e487844L, 0x7a7726483cf8d786L, 0x7a7726483cf8d787L, "objects"))) {
       tgs.appendNode(item);
     }
-    tgs.append("}");
+    tgs.newLine();
 
+    if ((SNodeOperations.getNextSibling(ctx.getPrimaryInput()) != null)) {
+      tgs.indent();
+      tgs.append("} ,");
+      tgs.newLine();
+    } else {
+      tgs.indent();
+      tgs.append("}");
+    }
   }
 }
