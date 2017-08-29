@@ -1,0 +1,16 @@
+<idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <id>jetbrains.mps.json.MPSJson</id>
+  <name>MPS JSON implementation</name>
+  <description>MPS JSON implementation</description>
+  <category>Custom Languages</category>
+  <version>0.1</version>
+  <vendor url="http://www.jetbrains.com" logo="/MPS_16.png" email="support@jetbrains.com">JetBrains s.r.o.</vendor>
+  <idea-version since-build="171.1" until-build="173.1”/>
+  <depends>jetbrains.mps.core</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages"/>
+    <mps.LanguageLibrary dir="/solutions"/>
+    <errorHandler implementation="jetbrains.mps.ide.blame.CharismaReporter"/>
+  </extensions>
+</idea-plugin>

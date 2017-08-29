@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root nodeRef="r:c83157e2-da91-48ed-b31f-0a0181e677ed(jetbrains.mps.json.build)/6663799801245267963">
+    <file name="MPSJson.xml">
+      <unit id="6663799801245267963" at="1,0,229,10" name="jetbrains.mps.json.build.MPSJson" />
+    </file>
+  </root>
+</debug-info>
+

@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.json/jetbrains.mps.json.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/jetbrains.mps.json/sandbox/jetbrains.mps.json.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/jetbrains.mps.json.build/jetbrains.mps.json.build.msd" folder="" />
     </projectModules>
   </component>
 </project>
